@@ -36,17 +36,25 @@ label{font-size:13px;display:block}input[type=date],input[type=month]{width:100%
 .pill{background:#f7dfe8;border-radius:999px;padding:6px 11px;font-size:12px;font-weight:800;color:#93405f}.toggle{display:flex;align-items:center;gap:10px;cursor:pointer}.toggle input{width:20px;height:20px;accent-color:#c94d75}
 button.action{background:linear-gradient(180deg,#d85d86,#c14972);color:white;border:0;padding:12px 16px;border-radius:16px;font-weight:800;cursor:pointer;box-shadow:0 8px 18px rgba(201,77,117,.18)}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}.actions button.secondary{background:#f4e8ee;color:#6f4257;box-shadow:none}
 .hidden{display:none!important}
-.navtools{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(10px + env(safe-area-inset-bottom,0px));width:min(760px,calc(100% - 16px));background:rgba(255,251,252,.97);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--stroke);border-radius:28px;box-shadow:0 15px 35px rgba(121,70,103,.14);padding:10px 8px;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px;z-index:50}
+.navtools{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(10px + env(safe-area-inset-bottom,0px));width:min(760px,calc(100% - 16px));background:rgba(255,251,252,.97);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--stroke);border-radius:28px;box-shadow:0 15px 35px rgba(121,70,103,.14);padding:10px 8px;display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:4px;z-index:50}
 .navtools button{appearance:none;border:0;background:transparent;color:#826373;padding:4px 2px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;cursor:pointer;min-width:0;font-weight:700}
 .navtools .navicon{width:42px;height:42px;border-radius:14px;display:flex;align-items:center;justify-content:center;background:#f7eef3;font-size:20px;box-shadow:inset 0 0 0 1px #f0dfe7}
 .navtools .navlabel{font-size:11px;line-height:1.05;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
 .navtools button.active{color:#b43662}.navtools button.active .navicon{background:linear-gradient(180deg,#dd5a86,#c73f6d);color:white;box-shadow:none}.navtools button.active .navlabel{font-weight:900}
-.calhead{display:flex;align-items:center;justify-content:space-between;gap:10px}.calhead button{padding:9px 13px;border:1px solid var(--stroke-strong);border-radius:13px;background:white;color:#6b4054}.calendar{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px;margin-top:14px}.caldow{text-align:center;font-size:11px;color:var(--muted);padding-bottom:5px}.calday{border:1px solid #eee1e8;border-radius:14px;background:#fff;min-height:68px;padding:7px 4px;font-size:13px;cursor:pointer;text-align:center;color:#61354b}.calday.selected{outline:2px solid #c94d75}.calday.recorded{background:#fff0f5}.calday.empty{visibility:hidden}.calday small{display:block;font-size:10px;color:#9a5976;margin-top:7px}.calendarinfo{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:12px 0}.calendarinfo>div{background:#fff4f8;padding:13px 7px;border-radius:16px;text-align:center;border:1px solid #f0e3ea}.calendarinfo strong{display:block;font-size:20px;color:#5b1d37}
+.calhead{display:flex;align-items:center;justify-content:space-between;gap:10px}.calhead button{padding:9px 13px;border:1px solid var(--stroke-strong);border-radius:13px;background:white;color:#6b4054}.calendar{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:6px;margin-top:14px}.caldow{text-align:center;font-size:11px;color:var(--muted);padding-bottom:5px}.calday{border:1px solid #eee1e8;border-radius:14px;background:#fff;min-height:68px;padding:7px 4px;font-size:13px;cursor:pointer;text-align:center;color:#61354b}.calday.selected{outline:2px solid #c94d75}.calday.recorded{background:#fff0f5}.calday.empty{visibility:hidden}.calday small{display:block;font-size:10px;color:#9a5976;margin-top:7px}.calendarinfo{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:12px 0}.calendarinfo>div{background:#fff4f8;padding:13px 7px;border-radius:16px;text-align:center;border:1px solid #f0e3ea}.calendarinfo strong{display:block;font-size:20px;color:#5b1d37}
 .checkrow{display:flex;gap:10px;align-items:center;border-bottom:1px solid #f1edef;padding:10px 0}.checkrow input{accent-color:#c94d75;width:19px;height:19px}.checkrow.checked span{text-decoration:line-through;color:#928a90}.listcat{margin-top:17px}.listcat h3{margin:0 0 6px;font-size:16px}.status{font-size:12px;color:var(--muted);margin-top:8px}.flexend{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.calbadge{font-size:11px;color:#88677c}.warning{background:#fff7e9;padding:12px;border-radius:14px;color:#796044;font-size:12px;border:1px solid #f5ead0}
 .quadgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.quadgrid input{width:100%}.progress{background:#eadde4;height:13px;border-radius:12px;overflow:hidden}.progress>div{background:linear-gradient(90deg,#ef88a8,#d75d86);height:100%;width:0%;transition:width .2s}.foodchoice{padding:12px;border:1px solid #ecdde5;background:white;border-radius:16px;margin:6px 0;display:block;width:100%;text-align:left;cursor:pointer;color:#5d3047}.gymdates{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}.gymdates button{min-height:45px;background:white;border:1px solid #e7d8e1;border-radius:13px;cursor:pointer;color:#683a50}.gymdates button.visited{background:linear-gradient(180deg,#d95e87,#c34771);color:white;border-color:#c34771}.minirow{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid #ece6eb;align-items:center}.minirow button{border:1px solid #eadbe4;border-radius:10px;padding:8px 10px;background:white;color:#6a4156}
 #sectionmenu .panel:first-child{margin-top:10px}
 @media(max-width:640px){.wrap{padding:16px 12px calc(112px + env(safe-area-inset-bottom,0px))}.stats,.ref,.calendarinfo{grid-template-columns:1fr}.panel{padding:15px;border-radius:22px}h1{font-size:29px}.navtools{width:calc(100% - 12px);gap:2px;padding:8px 4px}.navtools .navicon{width:38px;height:38px;border-radius:13px;font-size:18px}.navtools .navlabel{font-size:10px}.actions{flex-direction:column}.actions button{width:100%}}
-@media(max-width:390px){.navtools .navlabel{font-size:9px}.navtools .navicon{width:34px;height:34px;font-size:16px}}</style><link rel="manifest" href="./manifest.webmanifest"><link rel="apple-touch-icon" href="./icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="theme-color" content="#7b4667"></head><body><div class="wrap"><div class="hero"><div><h1>Meu Cardápio ❤️</h1><div class="versionline">Rosé Edition · Versão 6</div><p class="muted">Seu planner de alimentação, água, remédios e academia.</p></div><div class="avatar">💗</div></div><div class="panel"><div class="ref"><div><span class="muted">Meta inicial de calorias</span><b>1.700–1.900</b><small>kcal/dia</small></div><div><span class="muted">Proteína de referência</span><b>120–150 g</b><small>por dia</small></div></div><p class="tiny">Referências provisórias, não prescrição individual. Confirme seu peso e ajuste com profissional de saúde conforme necessário.</p></div><div class="navtools"><button id="navmenu" class="active" onclick="showSection('menu')"><span class="navicon">🍽️</span><span class="navlabel">Cardápio</span></button><button id="navcalendar" onclick="showSection('calendar')"><span class="navicon">📅</span><span class="navlabel">Calendário</span></button><button id="navshopping" onclick="showSection('shopping')"><span class="navicon">🛒</span><span class="navlabel">Compras</span></button><button id="navfood" onclick="showSection('food')"><span class="navicon">🍎</span><span class="navlabel">Alimentos</span></button><button id="navwater" onclick="showSection('water')"><span class="navicon">💧</span><span class="navlabel">Água</span></button><button id="navmeds" onclick="showSection('meds')"><span class="navicon">💊</span><span class="navlabel">Remédios</span></button><button id="navgymtrack" onclick="showSection('gymtrack')"><span class="navicon">🏋️</span><span class="navlabel">Academia</span></button></div><div id="sectionmenu"><div class="panel"><div class="mealhead"><h2>Escolha o dia</h2><span class="pill" id="gym"></span></div><div class="days" id="days"></div><div class="meal"><div class="mealhead"><span>☕ Ao acordar</span><span>70 kcal</span></div><p>Café + 200 ml de leite desnatado, sem açúcar</p><div class="mac">P 7 g · C 10 g · G 0 g</div></div><div class="meal"><div class="mealhead"><span>🥖 9h — Café da manhã</span><span>360 kcal</span></div><p>1 pão francês (50 g) + 2 ovos + muçarela (20 g)</p><div class="mac">P 22 g · C 30 g · G 17 g</div></div><div id="choiceMeals"></div><div class="meal"><label class="toggle"><input id="chocolate" type="checkbox"><b>🍫 Quero 15 g de chocolate ao leite hoje (+80 kcal)</b></label><p class="muted">Sobremesa opcional, após o almoço. P 1 g · C 9 g · G 5 g</p></div><div class="summary"><span class="muted">TOTAL DO DIA COM SUAS ESCOLHAS</span><div class="kcal" id="kcal"></div><div class="stats"><div class="stat"><small>Proteínas</small><b id="p"></b></div><div class="stat"><small>Carboidratos</small><b id="c"></b></div><div class="stat"><small>Gorduras</small><b id="g"></b></div></div><p class="tiny" id="feedback"></p></div><div class="actions"><button class="action" onclick="copyDay()">Copiar meu dia</button><button class="action secondary" onclick="copyWeek()">Copiar a semana</button><button class="action secondary" onclick="resetDay()">Restaurar dia</button></div></div></div>
+@media(max-width:390px){.navtools .navlabel{font-size:9px}.navtools .navicon{width:34px;height:34px;font-size:16px}}
+.home-summary{display:grid;grid-template-columns:220px 1fr;gap:14px;align-items:center}
+.ringbox{display:flex;justify-content:center}
+.ring{--deg:180deg;width:170px;height:170px;border-radius:50%;background:conic-gradient(#d85d86 0 var(--deg), #f2e4eb var(--deg) 360deg);display:grid;place-items:center;box-shadow:inset 0 0 0 10px rgba(255,255,255,.4)}
+.ring::before{content:'';width:126px;height:126px;border-radius:50%;background:white;box-shadow:inset 0 0 0 1px #f0e4ea}
+.ringcontent{position:absolute;text-align:center}.ringcontent .big{font-size:26px;font-weight:900;color:#5b1d37;line-height:1}.ringcontent .sub{font-size:13px;color:#8c7481}.homeside h3{margin:0 0 4px;font-size:18px;color:#5b1d37}.homeside p{margin:0 0 10px}.macroline{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.macrocard{background:#fff4f8;border:1px solid #f0e3ea;border-radius:18px;padding:10px}.macrocard b{display:block;font-size:16px;color:#5b1d37}.macrocard small{color:#8c7481}
+.home-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}.widget{background:rgba(255,250,251,.96);border:1px solid var(--stroke);border-radius:24px;padding:16px;box-shadow:var(--shadow)}.widget h3{margin:0;color:#5b1d37;font-size:18px}.widget p{margin:4px 0 0}.widget .row{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.widget .value{font-size:18px;font-weight:900;color:#5b1d37}.widget .mini{font-size:12px;color:#8c7481}.widget button.linkish,.shortcut-card{border:0;background:#f7dfe8;color:#8e3757;border-radius:16px;padding:10px 12px;font-weight:800;cursor:pointer}.widget button.linkish{white-space:nowrap}.widget ul{margin:10px 0 0;padding-left:18px;color:#6b4154}.widget.wide{grid-column:1/-1}.shortcut-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.shortcut-card{display:flex;flex-direction:column;align-items:flex-start;gap:4px;background:#fff5f8;border:1px solid #f0e3ea;color:#6f4157;padding:14px;border-radius:20px;text-align:left}.shortcut-card span{font-size:12px;color:#8c7481}.quote-card{display:flex;align-items:center;justify-content:space-between;gap:12px;background:linear-gradient(180deg,#fff4f7,#fff);border:1px solid #f0e3ea;border-radius:24px;padding:16px;margin-top:14px}.quote-heart{width:52px;height:52px;border-radius:18px;background:#f8e2ea;display:grid;place-items:center;font-size:24px}.quote-text{font-size:18px;font-weight:700;color:#8b3d5a;line-height:1.25}.weekdots{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}.weekdot{display:flex;flex-direction:column;align-items:center;gap:5px;font-size:12px;color:#7f6371}.weekdot i{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;border:1px solid #d9c7d1;background:white;font-style:normal}.weekdot.done i{background:linear-gradient(180deg,#dd638b,#c34771);color:white;border-color:#c34771}
+@media(max-width:640px){.home-summary{grid-template-columns:1fr}.ring{width:150px;height:150px}.ring::before{width:110px;height:110px}.home-grid{grid-template-columns:1fr}.shortcut-row{grid-template-columns:1fr 1fr}.quote-text{font-size:16px}}
+</style><link rel="manifest" href="./manifest.webmanifest"><link rel="apple-touch-icon" href="./icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="theme-color" content="#7b4667"></head><body><div class="wrap"><div class="hero"><div><h1>Meu Cardápio ❤️</h1><div class="versionline">Rosé Edition · Versão 6</div><p class="muted">Seu planner de alimentação, água, remédios e academia.</p></div><div class="avatar">💗</div></div><div class="panel"><div class="ref"><div><span class="muted">Meta inicial de calorias</span><b>1.700–1.900</b><small>kcal/dia</small></div><div><span class="muted">Proteína de referência</span><b>120–150 g</b><small>por dia</small></div></div><p class="tiny">Referências provisórias, não prescrição individual. Confirme seu peso e ajuste com profissional de saúde conforme necessário.</p></div><div class="navtools"><button id="navhome" class="active" onclick="showSection('home')"><span class="navicon">🏠</span><span class="navlabel">Início</span></button><button id="navmenu" onclick="showSection('menu')"><span class="navicon">🍽️</span><span class="navlabel">Cardápio</span></button><button id="navcalendar" onclick="showSection('calendar')"><span class="navicon">📅</span><span class="navlabel">Calendário</span></button><button id="navshopping" onclick="showSection('shopping')"><span class="navicon">🛒</span><span class="navlabel">Compras</span></button><button id="navfood" onclick="showSection('food')"><span class="navicon">🍎</span><span class="navlabel">Alimentos</span></button><button id="navwater" onclick="showSection('water')"><span class="navicon">💧</span><span class="navlabel">Água</span></button><button id="navmeds" onclick="showSection('meds')"><span class="navicon">💊</span><span class="navlabel">Remédios</span></button><button id="navgymtrack" onclick="showSection('gymtrack')"><span class="navicon">🏋️</span><span class="navlabel">Academia</span></button></div><div id="sectionhome"><div class="panel"><div class="home-summary"><div class="ringbox"><div class="ring" id="homeRing"><div class="ringcontent"><div class="big" id="homeKcal">0</div><div class="sub">kcal<br><span id="homeGoal">de 1.800</span></div></div></div></div><div class="homeside"><h3>Calorias de hoje</h3><p class="muted">Seu resumo rápido do dia.</p><div class="macroline"><div class="macrocard"><small>Proteínas</small><b id="homeP">0 g</b></div><div class="macrocard"><small>Carboidratos</small><b id="homeC">0 g</b></div><div class="macrocard"><small>Gorduras</small><b id="homeG">0 g</b></div></div></div></div></div><div class="home-grid"><div class="widget"><div class="row"><div><h3>Água</h3><p class="muted">Meta diária de 2 litros</p></div><button class="linkish" onclick="showSection('water')">Abrir</button></div><div class="value" id="homeWaterValue">0 / 2.000 ml</div><div class="progress" style="margin-top:10px"><div id="homeWaterBar"></div></div><div class="mini" id="homeWaterHint" style="margin-top:8px"></div></div><div class="widget"><div class="row"><div><h3>Remédios</h3><p class="muted">Acompanhamento de hoje</p></div><button class="linkish" onclick="showSection('meds')">Abrir</button></div><div class="value" id="homeMedsValue">0 de 0 tomados</div><ul id="homeMedsList"></ul></div><div class="widget wide"><div class="row"><div><h3>Academia</h3><p class="muted">Consistência faz toda a diferença.</p></div><button class="linkish" onclick="showSection('gymtrack')">Ver treinos</button></div><div class="value" id="homeGymValue">0 treino(s) no mês</div><div class="weekdots" id="homeWeekDots"></div></div><div class="widget wide"><div class="row"><div><h3>Atalhos</h3><p class="muted">Abra rapidinho a área que você precisa.</p></div></div><div class="shortcut-row"><button class="shortcut-card" onclick="showSection('menu')">🍽️ Cardápio<span>Monte seu dia</span></button><button class="shortcut-card" onclick="showSection('calendar')">📅 Calendário<span>Veja o mês</span></button><button class="shortcut-card" onclick="showSection('shopping')">🛒 Compras<span>Confira a lista</span></button><button class="shortcut-card" onclick="showSection('food')">🍎 Alimentos<span>Registre extras</span></button></div></div></div><div class="quote-card"><div style="display:flex;align-items:center;gap:12px"><div class="quote-heart">💗</div><div class="quote-text" id="homeQuote">Disciplina hoje, resultados incríveis amanhã.</div></div><button class="linkish" onclick="renderHome(true)">Nova frase</button></div></div><div id="sectionmenu" class="hidden"><div class="panel"><div class="mealhead"><h2>Escolha o dia</h2><span class="pill" id="gym"></span></div><div class="days" id="days"></div><div class="meal"><div class="mealhead"><span>☕ Ao acordar</span><span>70 kcal</span></div><p>Café + 200 ml de leite desnatado, sem açúcar</p><div class="mac">P 7 g · C 10 g · G 0 g</div></div><div class="meal"><div class="mealhead"><span>🥖 9h — Café da manhã</span><span>360 kcal</span></div><p>1 pão francês (50 g) + 2 ovos + muçarela (20 g)</p><div class="mac">P 22 g · C 30 g · G 17 g</div></div><div id="choiceMeals"></div><div class="meal"><label class="toggle"><input id="chocolate" type="checkbox"><b>🍫 Quero 15 g de chocolate ao leite hoje (+80 kcal)</b></label><p class="muted">Sobremesa opcional, após o almoço. P 1 g · C 9 g · G 5 g</p></div><div class="summary"><span class="muted">TOTAL DO DIA COM SUAS ESCOLHAS</span><div class="kcal" id="kcal"></div><div class="stats"><div class="stat"><small>Proteínas</small><b id="p"></b></div><div class="stat"><small>Carboidratos</small><b id="c"></b></div><div class="stat"><small>Gorduras</small><b id="g"></b></div></div><p class="tiny" id="feedback"></p></div><div class="actions"><button class="action" onclick="copyDay()">Copiar meu dia</button><button class="action secondary" onclick="copyWeek()">Copiar a semana</button><button class="action secondary" onclick="resetDay()">Restaurar dia</button></div></div></div>
 <div id="sectioncalendar" class="hidden"><div class="panel"><h2>Calendário 📅</h2><p class="muted">Toque em um dia, escolha o que realmente comeu e clique em salvar. Dias não preenchidos não entram na soma.</p><div class="calhead"><button onclick="changeMonth(-1)" aria-label="Mês anterior">‹</button><b id="monthtitle"></b><button onclick="changeMonth(1)" aria-label="Próximo mês">›</button></div><div class="calendar" id="calendargrid"></div><div class="calendarinfo"><div><small>Calorias no mês</small><strong id="monthkcal">0</strong></div><div><small>Dias registrados</small><strong id="monthdays">0</strong></div><div><small>Média registrada</small><strong id="monthavg">—</strong></div></div><p class="status" id="monthmacros"></p></div><div class="panel"><h2 id="dateheader">Selecione um dia</h2><div id="dateform"></div><div class="actions"><button class="action" onclick="saveDate()">Salvar este dia</button><button class="action secondary" onclick="deleteDate()">Apagar registro</button></div><p class="status" id="savehint"></p></div></div>
 <div id="sectionshopping" class="hidden"><div class="panel"><h2>Compras 🛒</h2><p class="muted">Quantidades aproximadas para <b>7 dias</b>, com base nas escolhas atuais do cardápio semanal. Mude suas opções e a lista se ajusta. Itens marcados ficam salvos neste navegador.</p><div class="warning">As quantidades são estimadas: considere perdas no preparo, tamanho de embalagens e seu estoque em casa. Para meses inteiros, repita a compra semanal.</div><div id="shoppinglist"></div><div class="actions"><button class="action secondary" onclick="copyShopping()">Copiar lista</button><button class="action secondary" onclick="clearChecks()">Desmarcar itens</button></div></div></div>
 <div id="sectionfood" class="hidden"><div class="panel"><h2>Registrar alimentos fora do cardápio 🔎</h2><p class="muted">Escolha a data, busque um alimento e informe quantos gramas comeu. Os registros extras entram no calendário e nos macros do dia. A busca é uma seleção inicial de alimentos comuns, <b>não a TACO integral</b>. Confira valores específicos na <a target="_blank" rel="noopener" href="https://nepa.unicamp.br/wp-content/uploads/sites/27/2023/10/taco_4_edicao_ampliada_e_revisada.pdf">TACO oficial da Unicamp</a>.</p><label>Data <input type="date" id="fooddate" onchange="renderExtras()"></label><label>Buscar alimento <input id="foodsearch" placeholder="Ex.: arroz, banana, queijo" oninput="showFoodMatches()"></label><div id="foodmatches"></div><div class="detail"><b>Alimento selecionado:</b> <span id="foodchosen">nenhum</span><div class="flexend" style="margin-top:10px"><label>Quantidade (g) <input type="number" id="foodgrams" min="1" max="3000" value="100"></label><button class="action" onclick="addFood()">Adicionar alimento</button></div></div><h3>Registros extras do dia</h3><div id="extrafoodlist"></div><div id="extratotal" class="summary"></div></div><div class="panel"><h2>Alimento que não aparece na busca?</h2><p class="muted">Cadastre pelos valores do rótulo para 100 g (ou 100 ml), ou pela tabela oficial. Informe a quantidade consumida acima.</p><label>Nome <input id="manualname" placeholder="Ex.: biscoito da marca X"></label><div class="quadgrid"><label>kcal / 100 g<input id="manualk" type="number" min="0" step="any"></label><label>Proteína (g)<input id="manualp" type="number" min="0" step="any"></label><label>Carboidratos (g)<input id="manualc" type="number" min="0" step="any"></label><label>Gorduras (g)<input id="manualg" type="number" min="0" step="any"></label></div><button class="action" onclick="addManualFood()">Adicionar do rótulo</button></div></div>
@@ -125,26 +133,334 @@ let chosenFood=null;
 function initWellnessDates(){const now=iso(new Date());for(let id of ['fooddate','waterdate','meddate'])if(!document.getElementById(id).value)document.getElementById(id).value=now;if(!document.getElementById('gymmonth').value)document.getElementById('gymmonth').value=now.slice(0,7)}
 function showFoodMatches(){let q=document.getElementById('foodsearch').value.toLocaleLowerCase('pt-BR').trim();let hits=commonFoods.filter(x=>!q||x.name.toLocaleLowerCase('pt-BR').includes(q)).slice(0,12);document.getElementById('foodmatches').innerHTML=hits.map(x=>`<button class="foodchoice" onclick="chooseFood(${commonFoods.indexOf(x)})"><b>${escapeHTML(x.name)}</b><br><small>${x.k} kcal · P ${x.p} · C ${x.c} · G ${x.g} (100 g)</small></button>`).join('')}
 function chooseFood(i){chosenFood=commonFoods[i];document.getElementById('foodchosen').textContent=chosenFood.name;document.getElementById('foodmatches').innerHTML=''}
-function commitFood(food){initWellnessDates();let grams=Number(document.getElementById('foodgrams').value);if(!(grams>0&&grams<=3000)){alert('Informe uma quantidade válida em gramas.');return}let date=document.getElementById('fooddate').value;let f={...food,grams};(wellness.foods[date]??=[]).push(f);saveWellness();renderExtras();if(!document.getElementById('sectioncalendar').classList.contains('hidden'))renderCalendar()}
+function commitFood(food){
+function startOfWeek(d){const x=new Date(d);const day=(x.getDay()+6)%7;x.setDate(x.getDate()-day);x.setHours(12,0,0,0);return x}
+function renderHome(forceQuote=false){
+  const today=iso(new Date());
+  const goal=1800;
+  const todayData=diary[today]?diaryTotal(diary[today],today):diaryTotal(copyDefault(today),today);
+  document.getElementById('homeKcal').textContent=Math.round(todayData.k).toLocaleString('pt-BR');
+  document.getElementById('homeGoal').textContent='de '+goal.toLocaleString('pt-BR');
+  document.getElementById('homeP').textContent=num(todayData.p)+' g';
+  document.getElementById('homeC').textContent=num(todayData.c)+' g';
+  document.getElementById('homeG').textContent=num(todayData.g)+' g';
+  const deg=Math.max(0,Math.min(360,(todayData.k/goal)*360));
+  document.getElementById('homeRing').style.setProperty('--deg',deg+'deg');
+  const ml=wellness.water[today]||0;
+  document.getElementById('homeWaterValue').textContent=ml.toLocaleString('pt-BR')+' / 2.000 ml';
+  document.getElementById('homeWaterBar').style.width=Math.min(100,ml/2000*100)+'%';
+  document.getElementById('homeWaterHint').textContent=ml>=2000?'Meta de água batida hoje!':'Faltam '+(2000-ml)+' ml para bater sua meta.';
+  const medsToday=wellness.taken[today]||{};
+  const medsTotal=wellness.meds.length;
+  const medsChecked=wellness.meds.filter(m=>medsToday[m.id]).length;
+  document.getElementById('homeMedsValue').textContent=medsChecked+' de '+medsTotal+' tomados';
+  document.getElementById('homeMedsList').innerHTML=wellness.meds.length?wellness.meds.slice(0,3).map(m=>'<li>'+(medsToday[m.id]?'✅':'⚪')+' '+escapeHTML(m.name)+(m.time?' — '+escapeHTML(m.time):'')+'</li>').join(''):'<li>Nenhum remédio cadastrado ainda.</li>';
+  const now=new Date(), ym=today.slice(0,7); const monthCount=Object.keys(wellness.gym).filter(d=>d.startsWith(ym)&&wellness.gym[d]).length;
+  document.getElementById('homeGymValue').textContent=monthCount+' treino(s) neste mês';
+  const monday=startOfWeek(new Date()); let weekHtml=''; const weekNames=['Seg','Ter','Qua','Qui','Sex','Sáb','Dom'];
+  for(let i=0;i<7;i++){ const dt=new Date(monday); dt.setDate(monday.getDate()+i); const key=iso(dt); const done=!!wellness.gym[key]; weekHtml += '<div class="weekdot '+(done?'done':'')+'"><i>'+(done?'✓':'')+'</i><span>'+weekNames[i]+'</span></div>'; }
+  document.getElementById('homeWeekDots').innerHTML=weekHtml;
+  const phrases=['Disciplina hoje, resultados incríveis amanhã.','Cada escolha conta — e você está indo muito bem.','Constância vale mais que perfeição.','Você não precisa fazer tudo; só continuar.','Seu futuro eu vai agradecer por cada passo de hoje.'];
+  if(forceQuote || !renderHome._quote){renderHome._quote=phrases[Math.floor(Math.random()*phrases.length)]}
+  document.getElementById('homeQuote').textContent=renderHome._quote;
+}
+function showSection(id){for(const x of ['home','menu','calendar','shopping','food','water','meds','gymtrack']){document.getElementById('section'+x).classList.toggle('hidden',x!==id);document.getElementById('nav'+x).classList.toggle('active',x===id)}if(id==='home')renderHome();if(id==='calendar'){renderCalendar();renderDate()}if(id==='shopping')renderShopping();if(id==='food')renderExtras();if(id==='water')renderWater();if(id==='meds')renderMeds();if(id==='gymtrack')renderGymTrack()}
+const _saveDate=saveDate; saveDate=function(){_saveDate(); renderHome()}
+const _deleteDate=deleteDate; deleteDate=function(){_deleteDate(); renderHome()}
+const _addWater=addWater; addWater=function(v){_addWater(v); renderHome()}
+const _createMed=createMed; createMed=function(){_createMed(); renderHome()}
+const _toggleMed=toggleMed; toggleMed=function(id,taken){_toggleMed(id,taken); renderHome()}
+const _removeMed=removeMed; removeMed=function(id){_removeMed(id); renderHome()}
+const _toggleGym=toggleGym; toggleGym=function(date){_toggleGym(date); renderHome()}
+const _commitFood=commitFood; commitFood=function(food){_commitFood(food); renderHome()}
+const _deleteFood=deleteFood; deleteFood=function(i){_deleteFood(i); renderHome()}
+const _importData=importData; importData=function(input){_importData(input); setTimeout(()=>renderHome(),100)}
+showSection('home');
+
+initWellnessDates();let grams=Number(document.getElementById('foodgrams').value);if(!(grams>0&&grams<=3000)){alert('Informe uma quantidade válida em gramas.');return}let date=document.getElementById('fooddate').value;let f={...food,grams};(wellness.foods[date]??=[]).push(f);saveWellness();renderExtras();if(!document.getElementById('sectioncalendar').classList.contains('hidden'))renderCalendar()}
 function addFood(){if(!chosenFood){alert('Selecione um alimento na pesquisa.');return}commitFood(chosenFood)}
 function addManualFood(){let name=document.getElementById('manualname').value.trim();const fields=['manualk','manualp','manualc','manualg'];let vals=fields.map(x=>Number(document.getElementById(x).value));if(!name||fields.some(x=>document.getElementById(x).value.trim()==='')||vals.some(x=>!Number.isFinite(x)||x<0)){alert('Preencha o nome e os quatro valores por 100 g.');return}commitFood({name,k:vals[0],p:vals[1],c:vals[2],g:vals[3]})}
 function extraTotal(date){let rows=wellness.foods[date]||[];return rows.reduce((a,f)=>{for(let key of ['k','p','c','g'])a[key]+=f[key]*f.grams/100;return a},{k:0,p:0,c:0,g:0})}
-function renderExtras(){initWellnessDates();showFoodMatches();let date=document.getElementById('fooddate').value;let rows=wellness.foods[date]||[];document.getElementById('extrafoodlist').innerHTML=rows.length?rows.map((f,i)=>`<div class="minirow"><span><b>${escapeHTML(f.name)}</b> · ${f.grams} g<br><small>${Math.round(f.k*f.grams/100)} kcal</small></span><button onclick="deleteFood(${i})">Excluir</button></div>`).join(''):'<p class="muted">Nenhum alimento extra registrado nesta data.</p>';let t=extraTotal(date);document.getElementById('extratotal').textContent=`Extras: ${Math.round(t.k)} kcal · P ${num(t.p)} g · C ${num(t.c)} g · G ${num(t.g)} g. Se houver cardápio salvo no calendário, as duas partes serão somadas.`}
+function renderExtras(){
+function startOfWeek(d){const x=new Date(d);const day=(x.getDay()+6)%7;x.setDate(x.getDate()-day);x.setHours(12,0,0,0);return x}
+function renderHome(forceQuote=false){
+  const today=iso(new Date());
+  const goal=1800;
+  const todayData=diary[today]?diaryTotal(diary[today],today):diaryTotal(copyDefault(today),today);
+  document.getElementById('homeKcal').textContent=Math.round(todayData.k).toLocaleString('pt-BR');
+  document.getElementById('homeGoal').textContent='de '+goal.toLocaleString('pt-BR');
+  document.getElementById('homeP').textContent=num(todayData.p)+' g';
+  document.getElementById('homeC').textContent=num(todayData.c)+' g';
+  document.getElementById('homeG').textContent=num(todayData.g)+' g';
+  const deg=Math.max(0,Math.min(360,(todayData.k/goal)*360));
+  document.getElementById('homeRing').style.setProperty('--deg',deg+'deg');
+  const ml=wellness.water[today]||0;
+  document.getElementById('homeWaterValue').textContent=ml.toLocaleString('pt-BR')+' / 2.000 ml';
+  document.getElementById('homeWaterBar').style.width=Math.min(100,ml/2000*100)+'%';
+  document.getElementById('homeWaterHint').textContent=ml>=2000?'Meta de água batida hoje!':'Faltam '+(2000-ml)+' ml para bater sua meta.';
+  const medsToday=wellness.taken[today]||{};
+  const medsTotal=wellness.meds.length;
+  const medsChecked=wellness.meds.filter(m=>medsToday[m.id]).length;
+  document.getElementById('homeMedsValue').textContent=medsChecked+' de '+medsTotal+' tomados';
+  document.getElementById('homeMedsList').innerHTML=wellness.meds.length?wellness.meds.slice(0,3).map(m=>'<li>'+(medsToday[m.id]?'✅':'⚪')+' '+escapeHTML(m.name)+(m.time?' — '+escapeHTML(m.time):'')+'</li>').join(''):'<li>Nenhum remédio cadastrado ainda.</li>';
+  const now=new Date(), ym=today.slice(0,7); const monthCount=Object.keys(wellness.gym).filter(d=>d.startsWith(ym)&&wellness.gym[d]).length;
+  document.getElementById('homeGymValue').textContent=monthCount+' treino(s) neste mês';
+  const monday=startOfWeek(new Date()); let weekHtml=''; const weekNames=['Seg','Ter','Qua','Qui','Sex','Sáb','Dom'];
+  for(let i=0;i<7;i++){ const dt=new Date(monday); dt.setDate(monday.getDate()+i); const key=iso(dt); const done=!!wellness.gym[key]; weekHtml += '<div class="weekdot '+(done?'done':'')+'"><i>'+(done?'✓':'')+'</i><span>'+weekNames[i]+'</span></div>'; }
+  document.getElementById('homeWeekDots').innerHTML=weekHtml;
+  const phrases=['Disciplina hoje, resultados incríveis amanhã.','Cada escolha conta — e você está indo muito bem.','Constância vale mais que perfeição.','Você não precisa fazer tudo; só continuar.','Seu futuro eu vai agradecer por cada passo de hoje.'];
+  if(forceQuote || !renderHome._quote){renderHome._quote=phrases[Math.floor(Math.random()*phrases.length)]}
+  document.getElementById('homeQuote').textContent=renderHome._quote;
+}
+function showSection(id){for(const x of ['home','menu','calendar','shopping','food','water','meds','gymtrack']){document.getElementById('section'+x).classList.toggle('hidden',x!==id);document.getElementById('nav'+x).classList.toggle('active',x===id)}if(id==='home')renderHome();if(id==='calendar'){renderCalendar();renderDate()}if(id==='shopping')renderShopping();if(id==='food')renderExtras();if(id==='water')renderWater();if(id==='meds')renderMeds();if(id==='gymtrack')renderGymTrack()}
+const _saveDate=saveDate; saveDate=function(){_saveDate(); renderHome()}
+const _deleteDate=deleteDate; deleteDate=function(){_deleteDate(); renderHome()}
+const _addWater=addWater; addWater=function(v){_addWater(v); renderHome()}
+const _createMed=createMed; createMed=function(){_createMed(); renderHome()}
+const _toggleMed=toggleMed; toggleMed=function(id,taken){_toggleMed(id,taken); renderHome()}
+const _removeMed=removeMed; removeMed=function(id){_removeMed(id); renderHome()}
+const _toggleGym=toggleGym; toggleGym=function(date){_toggleGym(date); renderHome()}
+const _commitFood=commitFood; commitFood=function(food){_commitFood(food); renderHome()}
+const _deleteFood=deleteFood; deleteFood=function(i){_deleteFood(i); renderHome()}
+const _importData=importData; importData=function(input){_importData(input); setTimeout(()=>renderHome(),100)}
+showSection('home');
+
+initWellnessDates();showFoodMatches();let date=document.getElementById('fooddate').value;let rows=wellness.foods[date]||[];document.getElementById('extrafoodlist').innerHTML=rows.length?rows.map((f,i)=>`<div class="minirow"><span><b>${escapeHTML(f.name)}</b> · ${f.grams} g<br><small>${Math.round(f.k*f.grams/100)} kcal</small></span><button onclick="deleteFood(${i})">Excluir</button></div>`).join(''):'<p class="muted">Nenhum alimento extra registrado nesta data.</p>';let t=extraTotal(date);document.getElementById('extratotal').textContent=`Extras: ${Math.round(t.k)} kcal · P ${num(t.p)} g · C ${num(t.c)} g · G ${num(t.g)} g. Se houver cardápio salvo no calendário, as duas partes serão somadas.`}
 function deleteFood(i){let date=document.getElementById('fooddate').value;wellness.foods[date].splice(i,1);saveWellness();renderExtras()}
 const oldDiaryTotal=diaryTotal;
 diaryTotal=function(x,date){let base=oldDiaryTotal(x,date),e=extraTotal(date);return {k:Math.round(base.k+e.k),p:num(base.p+e.p),c:num(base.c+e.c),g:num(base.g+e.g)}};
 // Se só existirem alimentos extras, esses dias também precisam aparecer no calendário mensal.
 const baseRenderCalendar=renderCalendar;
 renderCalendar=function(){baseRenderCalendar();let y=month.getFullYear(),m=month.getMonth(),n=new Date(y,m+1,0).getDate();let sum={k:0,p:0,c:0,g:0},count=0;for(let j=1;j<=n;j++){let d=`${y}-${pad(m+1)}-${pad(j)}`,hasBase=!!diary[d],extra=extraTotal(d),hasExtra=(wellness.foods[d]||[]).length>0;if(!hasBase&&!hasExtra)continue;count++;let t=hasBase?diaryTotal(diary[d],d):extra;for(let key of ['k','p','c','g'])sum[key]+=t[key];if(!hasBase){let button=[...document.querySelectorAll('#calendargrid button')].find(b=>b.textContent.trim()===String(j));if(button){button.classList.add('recorded');button.insertAdjacentHTML('beforeend',`<small>${Math.round(t.k)}<br>kcal</small>`)}}}document.getElementById('monthkcal').textContent=Math.round(sum.k).toLocaleString('pt-BR');document.getElementById('monthdays').textContent=count;document.getElementById('monthavg').textContent=count?Math.round(sum.k/count).toLocaleString('pt-BR'):'—';document.getElementById('monthmacros').textContent=`Com alimentos extras: P ${num(sum.p)} g · C ${num(sum.c)} g · G ${num(sum.g)} g. Registre apenas o que foi consumido; desmarque ou edite refeições do plano quando necessário.`};
-function addWater(v){initWellnessDates();let date=document.getElementById('waterdate').value;if(!Number.isFinite(v)||!v||Math.abs(v)>5000){alert('Insira uma quantidade válida.');return}wellness.water[date]=Math.max(0,(wellness.water[date]||0)+v);saveWellness();renderWater()}
-function renderWater(){initWellnessDates();let date=document.getElementById('waterdate').value,ml=wellness.water[date]||0;document.getElementById('watercount').textContent=`${ml.toLocaleString('pt-BR')} / 2.000 ml`;document.getElementById('waterbar').style.width=Math.min(100,ml/2000*100)+'%';document.getElementById('waterhint').textContent=ml>=2000?'Meta do dia atingida!':`Faltam ${2000-ml} ml para sua meta.`;let dates=Object.keys(wellness.water).filter(d=>d.slice(0,7)===date.slice(0,7));let total=dates.reduce((s,d)=>s+wellness.water[d],0);document.getElementById('waterhistory').innerHTML=`<p class="status">Neste mês: ${total.toLocaleString('pt-BR')} ml registrados em ${dates.filter(d=>wellness.water[d]>0).length} dias.</p>`}
+function addWater(v){
+function startOfWeek(d){const x=new Date(d);const day=(x.getDay()+6)%7;x.setDate(x.getDate()-day);x.setHours(12,0,0,0);return x}
+function renderHome(forceQuote=false){
+  const today=iso(new Date());
+  const goal=1800;
+  const todayData=diary[today]?diaryTotal(diary[today],today):diaryTotal(copyDefault(today),today);
+  document.getElementById('homeKcal').textContent=Math.round(todayData.k).toLocaleString('pt-BR');
+  document.getElementById('homeGoal').textContent='de '+goal.toLocaleString('pt-BR');
+  document.getElementById('homeP').textContent=num(todayData.p)+' g';
+  document.getElementById('homeC').textContent=num(todayData.c)+' g';
+  document.getElementById('homeG').textContent=num(todayData.g)+' g';
+  const deg=Math.max(0,Math.min(360,(todayData.k/goal)*360));
+  document.getElementById('homeRing').style.setProperty('--deg',deg+'deg');
+  const ml=wellness.water[today]||0;
+  document.getElementById('homeWaterValue').textContent=ml.toLocaleString('pt-BR')+' / 2.000 ml';
+  document.getElementById('homeWaterBar').style.width=Math.min(100,ml/2000*100)+'%';
+  document.getElementById('homeWaterHint').textContent=ml>=2000?'Meta de água batida hoje!':'Faltam '+(2000-ml)+' ml para bater sua meta.';
+  const medsToday=wellness.taken[today]||{};
+  const medsTotal=wellness.meds.length;
+  const medsChecked=wellness.meds.filter(m=>medsToday[m.id]).length;
+  document.getElementById('homeMedsValue').textContent=medsChecked+' de '+medsTotal+' tomados';
+  document.getElementById('homeMedsList').innerHTML=wellness.meds.length?wellness.meds.slice(0,3).map(m=>'<li>'+(medsToday[m.id]?'✅':'⚪')+' '+escapeHTML(m.name)+(m.time?' — '+escapeHTML(m.time):'')+'</li>').join(''):'<li>Nenhum remédio cadastrado ainda.</li>';
+  const now=new Date(), ym=today.slice(0,7); const monthCount=Object.keys(wellness.gym).filter(d=>d.startsWith(ym)&&wellness.gym[d]).length;
+  document.getElementById('homeGymValue').textContent=monthCount+' treino(s) neste mês';
+  const monday=startOfWeek(new Date()); let weekHtml=''; const weekNames=['Seg','Ter','Qua','Qui','Sex','Sáb','Dom'];
+  for(let i=0;i<7;i++){ const dt=new Date(monday); dt.setDate(monday.getDate()+i); const key=iso(dt); const done=!!wellness.gym[key]; weekHtml += '<div class="weekdot '+(done?'done':'')+'"><i>'+(done?'✓':'')+'</i><span>'+weekNames[i]+'</span></div>'; }
+  document.getElementById('homeWeekDots').innerHTML=weekHtml;
+  const phrases=['Disciplina hoje, resultados incríveis amanhã.','Cada escolha conta — e você está indo muito bem.','Constância vale mais que perfeição.','Você não precisa fazer tudo; só continuar.','Seu futuro eu vai agradecer por cada passo de hoje.'];
+  if(forceQuote || !renderHome._quote){renderHome._quote=phrases[Math.floor(Math.random()*phrases.length)]}
+  document.getElementById('homeQuote').textContent=renderHome._quote;
+}
+function showSection(id){for(const x of ['home','menu','calendar','shopping','food','water','meds','gymtrack']){document.getElementById('section'+x).classList.toggle('hidden',x!==id);document.getElementById('nav'+x).classList.toggle('active',x===id)}if(id==='home')renderHome();if(id==='calendar'){renderCalendar();renderDate()}if(id==='shopping')renderShopping();if(id==='food')renderExtras();if(id==='water')renderWater();if(id==='meds')renderMeds();if(id==='gymtrack')renderGymTrack()}
+const _saveDate=saveDate; saveDate=function(){_saveDate(); renderHome()}
+const _deleteDate=deleteDate; deleteDate=function(){_deleteDate(); renderHome()}
+const _addWater=addWater; addWater=function(v){_addWater(v); renderHome()}
+const _createMed=createMed; createMed=function(){_createMed(); renderHome()}
+const _toggleMed=toggleMed; toggleMed=function(id,taken){_toggleMed(id,taken); renderHome()}
+const _removeMed=removeMed; removeMed=function(id){_removeMed(id); renderHome()}
+const _toggleGym=toggleGym; toggleGym=function(date){_toggleGym(date); renderHome()}
+const _commitFood=commitFood; commitFood=function(food){_commitFood(food); renderHome()}
+const _deleteFood=deleteFood; deleteFood=function(i){_deleteFood(i); renderHome()}
+const _importData=importData; importData=function(input){_importData(input); setTimeout(()=>renderHome(),100)}
+showSection('home');
+
+initWellnessDates();let date=document.getElementById('waterdate').value;if(!Number.isFinite(v)||!v||Math.abs(v)>5000){alert('Insira uma quantidade válida.');return}wellness.water[date]=Math.max(0,(wellness.water[date]||0)+v);saveWellness();renderWater()}
+function renderWater(){
+function startOfWeek(d){const x=new Date(d);const day=(x.getDay()+6)%7;x.setDate(x.getDate()-day);x.setHours(12,0,0,0);return x}
+function renderHome(forceQuote=false){
+  const today=iso(new Date());
+  const goal=1800;
+  const todayData=diary[today]?diaryTotal(diary[today],today):diaryTotal(copyDefault(today),today);
+  document.getElementById('homeKcal').textContent=Math.round(todayData.k).toLocaleString('pt-BR');
+  document.getElementById('homeGoal').textContent='de '+goal.toLocaleString('pt-BR');
+  document.getElementById('homeP').textContent=num(todayData.p)+' g';
+  document.getElementById('homeC').textContent=num(todayData.c)+' g';
+  document.getElementById('homeG').textContent=num(todayData.g)+' g';
+  const deg=Math.max(0,Math.min(360,(todayData.k/goal)*360));
+  document.getElementById('homeRing').style.setProperty('--deg',deg+'deg');
+  const ml=wellness.water[today]||0;
+  document.getElementById('homeWaterValue').textContent=ml.toLocaleString('pt-BR')+' / 2.000 ml';
+  document.getElementById('homeWaterBar').style.width=Math.min(100,ml/2000*100)+'%';
+  document.getElementById('homeWaterHint').textContent=ml>=2000?'Meta de água batida hoje!':'Faltam '+(2000-ml)+' ml para bater sua meta.';
+  const medsToday=wellness.taken[today]||{};
+  const medsTotal=wellness.meds.length;
+  const medsChecked=wellness.meds.filter(m=>medsToday[m.id]).length;
+  document.getElementById('homeMedsValue').textContent=medsChecked+' de '+medsTotal+' tomados';
+  document.getElementById('homeMedsList').innerHTML=wellness.meds.length?wellness.meds.slice(0,3).map(m=>'<li>'+(medsToday[m.id]?'✅':'⚪')+' '+escapeHTML(m.name)+(m.time?' — '+escapeHTML(m.time):'')+'</li>').join(''):'<li>Nenhum remédio cadastrado ainda.</li>';
+  const now=new Date(), ym=today.slice(0,7); const monthCount=Object.keys(wellness.gym).filter(d=>d.startsWith(ym)&&wellness.gym[d]).length;
+  document.getElementById('homeGymValue').textContent=monthCount+' treino(s) neste mês';
+  const monday=startOfWeek(new Date()); let weekHtml=''; const weekNames=['Seg','Ter','Qua','Qui','Sex','Sáb','Dom'];
+  for(let i=0;i<7;i++){ const dt=new Date(monday); dt.setDate(monday.getDate()+i); const key=iso(dt); const done=!!wellness.gym[key]; weekHtml += '<div class="weekdot '+(done?'done':'')+'"><i>'+(done?'✓':'')+'</i><span>'+weekNames[i]+'</span></div>'; }
+  document.getElementById('homeWeekDots').innerHTML=weekHtml;
+  const phrases=['Disciplina hoje, resultados incríveis amanhã.','Cada escolha conta — e você está indo muito bem.','Constância vale mais que perfeição.','Você não precisa fazer tudo; só continuar.','Seu futuro eu vai agradecer por cada passo de hoje.'];
+  if(forceQuote || !renderHome._quote){renderHome._quote=phrases[Math.floor(Math.random()*phrases.length)]}
+  document.getElementById('homeQuote').textContent=renderHome._quote;
+}
+function showSection(id){for(const x of ['home','menu','calendar','shopping','food','water','meds','gymtrack']){document.getElementById('section'+x).classList.toggle('hidden',x!==id);document.getElementById('nav'+x).classList.toggle('active',x===id)}if(id==='home')renderHome();if(id==='calendar'){renderCalendar();renderDate()}if(id==='shopping')renderShopping();if(id==='food')renderExtras();if(id==='water')renderWater();if(id==='meds')renderMeds();if(id==='gymtrack')renderGymTrack()}
+const _saveDate=saveDate; saveDate=function(){_saveDate(); renderHome()}
+const _deleteDate=deleteDate; deleteDate=function(){_deleteDate(); renderHome()}
+const _addWater=addWater; addWater=function(v){_addWater(v); renderHome()}
+const _createMed=createMed; createMed=function(){_createMed(); renderHome()}
+const _toggleMed=toggleMed; toggleMed=function(id,taken){_toggleMed(id,taken); renderHome()}
+const _removeMed=removeMed; removeMed=function(id){_removeMed(id); renderHome()}
+const _toggleGym=toggleGym; toggleGym=function(date){_toggleGym(date); renderHome()}
+const _commitFood=commitFood; commitFood=function(food){_commitFood(food); renderHome()}
+const _deleteFood=deleteFood; deleteFood=function(i){_deleteFood(i); renderHome()}
+const _importData=importData; importData=function(input){_importData(input); setTimeout(()=>renderHome(),100)}
+showSection('home');
+
+initWellnessDates();let date=document.getElementById('waterdate').value,ml=wellness.water[date]||0;document.getElementById('watercount').textContent=`${ml.toLocaleString('pt-BR')} / 2.000 ml`;document.getElementById('waterbar').style.width=Math.min(100,ml/2000*100)+'%';document.getElementById('waterhint').textContent=ml>=2000?'Meta do dia atingida!':`Faltam ${2000-ml} ml para sua meta.`;let dates=Object.keys(wellness.water).filter(d=>d.slice(0,7)===date.slice(0,7));let total=dates.reduce((s,d)=>s+wellness.water[d],0);document.getElementById('waterhistory').innerHTML=`<p class="status">Neste mês: ${total.toLocaleString('pt-BR')} ml registrados em ${dates.filter(d=>wellness.water[d]>0).length} dias.</p>`}
 function createMed(){let name=document.getElementById('medname').value.trim(),time=document.getElementById('medtime').value;if(!name){alert('Informe o nome do medicamento ou da rotina.');return}let id='m'+Date.now()+'_'+Math.floor(Math.random()*10000);wellness.meds.push({id,name,time});saveWellness();document.getElementById('medname').value='';renderMeds()}
 function removeMed(id){if(!confirm('Remover este medicamento da lista? Os registros anteriores deixarão de aparecer.'))return;wellness.meds=wellness.meds.filter(x=>x.id!==id);saveWellness();renderMeds()}
 function toggleMed(id,taken){let date=document.getElementById('meddate').value;(wellness.taken[date]??={})[id]=taken;saveWellness();renderMeds()}
-function renderMeds(){initWellnessDates();let date=document.getElementById('meddate').value,checked=wellness.taken[date]||{};document.getElementById('medlist').innerHTML=wellness.meds.length?wellness.meds.map(m=>`<div class="minirow"><label class="toggle"><input type="checkbox" ${checked[m.id]?'checked':''} onchange="toggleMed('${m.id}',this.checked)"><span>${escapeHTML(m.name)} ${m.time?`<small>(${escapeHTML(m.time)})</small>`:''}</span></label><button onclick="removeMed('${m.id}')">Remover</button></div>`).join(''):'<p class="muted">Adicione os medicamentos ou rotinas que deseja acompanhar. Se houver várias tomadas por dia, cadastre cada horário separadamente.</p>'}
+function renderMeds(){
+function startOfWeek(d){const x=new Date(d);const day=(x.getDay()+6)%7;x.setDate(x.getDate()-day);x.setHours(12,0,0,0);return x}
+function renderHome(forceQuote=false){
+  const today=iso(new Date());
+  const goal=1800;
+  const todayData=diary[today]?diaryTotal(diary[today],today):diaryTotal(copyDefault(today),today);
+  document.getElementById('homeKcal').textContent=Math.round(todayData.k).toLocaleString('pt-BR');
+  document.getElementById('homeGoal').textContent='de '+goal.toLocaleString('pt-BR');
+  document.getElementById('homeP').textContent=num(todayData.p)+' g';
+  document.getElementById('homeC').textContent=num(todayData.c)+' g';
+  document.getElementById('homeG').textContent=num(todayData.g)+' g';
+  const deg=Math.max(0,Math.min(360,(todayData.k/goal)*360));
+  document.getElementById('homeRing').style.setProperty('--deg',deg+'deg');
+  const ml=wellness.water[today]||0;
+  document.getElementById('homeWaterValue').textContent=ml.toLocaleString('pt-BR')+' / 2.000 ml';
+  document.getElementById('homeWaterBar').style.width=Math.min(100,ml/2000*100)+'%';
+  document.getElementById('homeWaterHint').textContent=ml>=2000?'Meta de água batida hoje!':'Faltam '+(2000-ml)+' ml para bater sua meta.';
+  const medsToday=wellness.taken[today]||{};
+  const medsTotal=wellness.meds.length;
+  const medsChecked=wellness.meds.filter(m=>medsToday[m.id]).length;
+  document.getElementById('homeMedsValue').textContent=medsChecked+' de '+medsTotal+' tomados';
+  document.getElementById('homeMedsList').innerHTML=wellness.meds.length?wellness.meds.slice(0,3).map(m=>'<li>'+(medsToday[m.id]?'✅':'⚪')+' '+escapeHTML(m.name)+(m.time?' — '+escapeHTML(m.time):'')+'</li>').join(''):'<li>Nenhum remédio cadastrado ainda.</li>';
+  const now=new Date(), ym=today.slice(0,7); const monthCount=Object.keys(wellness.gym).filter(d=>d.startsWith(ym)&&wellness.gym[d]).length;
+  document.getElementById('homeGymValue').textContent=monthCount+' treino(s) neste mês';
+  const monday=startOfWeek(new Date()); let weekHtml=''; const weekNames=['Seg','Ter','Qua','Qui','Sex','Sáb','Dom'];
+  for(let i=0;i<7;i++){ const dt=new Date(monday); dt.setDate(monday.getDate()+i); const key=iso(dt); const done=!!wellness.gym[key]; weekHtml += '<div class="weekdot '+(done?'done':'')+'"><i>'+(done?'✓':'')+'</i><span>'+weekNames[i]+'</span></div>'; }
+  document.getElementById('homeWeekDots').innerHTML=weekHtml;
+  const phrases=['Disciplina hoje, resultados incríveis amanhã.','Cada escolha conta — e você está indo muito bem.','Constância vale mais que perfeição.','Você não precisa fazer tudo; só continuar.','Seu futuro eu vai agradecer por cada passo de hoje.'];
+  if(forceQuote || !renderHome._quote){renderHome._quote=phrases[Math.floor(Math.random()*phrases.length)]}
+  document.getElementById('homeQuote').textContent=renderHome._quote;
+}
+function showSection(id){for(const x of ['home','menu','calendar','shopping','food','water','meds','gymtrack']){document.getElementById('section'+x).classList.toggle('hidden',x!==id);document.getElementById('nav'+x).classList.toggle('active',x===id)}if(id==='home')renderHome();if(id==='calendar'){renderCalendar();renderDate()}if(id==='shopping')renderShopping();if(id==='food')renderExtras();if(id==='water')renderWater();if(id==='meds')renderMeds();if(id==='gymtrack')renderGymTrack()}
+const _saveDate=saveDate; saveDate=function(){_saveDate(); renderHome()}
+const _deleteDate=deleteDate; deleteDate=function(){_deleteDate(); renderHome()}
+const _addWater=addWater; addWater=function(v){_addWater(v); renderHome()}
+const _createMed=createMed; createMed=function(){_createMed(); renderHome()}
+const _toggleMed=toggleMed; toggleMed=function(id,taken){_toggleMed(id,taken); renderHome()}
+const _removeMed=removeMed; removeMed=function(id){_removeMed(id); renderHome()}
+const _toggleGym=toggleGym; toggleGym=function(date){_toggleGym(date); renderHome()}
+const _commitFood=commitFood; commitFood=function(food){_commitFood(food); renderHome()}
+const _deleteFood=deleteFood; deleteFood=function(i){_deleteFood(i); renderHome()}
+const _importData=importData; importData=function(input){_importData(input); setTimeout(()=>renderHome(),100)}
+showSection('home');
+
+initWellnessDates();let date=document.getElementById('meddate').value,checked=wellness.taken[date]||{};document.getElementById('medlist').innerHTML=wellness.meds.length?wellness.meds.map(m=>`<div class="minirow"><label class="toggle"><input type="checkbox" ${checked[m.id]?'checked':''} onchange="toggleMed('${m.id}',this.checked)"><span>${escapeHTML(m.name)} ${m.time?`<small>(${escapeHTML(m.time)})</small>`:''}</span></label><button onclick="removeMed('${m.id}')">Remover</button></div>`).join(''):'<p class="muted">Adicione os medicamentos ou rotinas que deseja acompanhar. Se houver várias tomadas por dia, cadastre cada horário separadamente.</p>'}
 function toggleGym(date){wellness.gym[date]=!wellness.gym[date];saveWellness();renderGymTrack()}
-function renderGymTrack(){initWellnessDates();let ym=document.getElementById('gymmonth').value;if(!ym)return;let [y,m]=ym.split('-').map(Number),n=new Date(y,m,0).getDate(),total=0,html='';for(let d=1;d<=n;d++){let date=ym+'-'+pad(d),v=!!wellness.gym[date];if(v)total++;html+=`<button class="${v?'visited':''}" onclick="toggleGym('${date}')" aria-label="Dia ${d}: ${v?'treino registrado':'sem treino'}" title="${v?'Foi à academia':'Marcar academia'}">${d}${v?' ✓':''}</button>`}document.getElementById('gymdates').innerHTML=html;document.getElementById('gymtotal').textContent=total;document.getElementById('gymdetails').textContent=`${total} visita(s) registradas em ${n} dias. Toque nos números para marcar ou desmarcar.`}
+function renderGymTrack(){
+function startOfWeek(d){const x=new Date(d);const day=(x.getDay()+6)%7;x.setDate(x.getDate()-day);x.setHours(12,0,0,0);return x}
+function renderHome(forceQuote=false){
+  const today=iso(new Date());
+  const goal=1800;
+  const todayData=diary[today]?diaryTotal(diary[today],today):diaryTotal(copyDefault(today),today);
+  document.getElementById('homeKcal').textContent=Math.round(todayData.k).toLocaleString('pt-BR');
+  document.getElementById('homeGoal').textContent='de '+goal.toLocaleString('pt-BR');
+  document.getElementById('homeP').textContent=num(todayData.p)+' g';
+  document.getElementById('homeC').textContent=num(todayData.c)+' g';
+  document.getElementById('homeG').textContent=num(todayData.g)+' g';
+  const deg=Math.max(0,Math.min(360,(todayData.k/goal)*360));
+  document.getElementById('homeRing').style.setProperty('--deg',deg+'deg');
+  const ml=wellness.water[today]||0;
+  document.getElementById('homeWaterValue').textContent=ml.toLocaleString('pt-BR')+' / 2.000 ml';
+  document.getElementById('homeWaterBar').style.width=Math.min(100,ml/2000*100)+'%';
+  document.getElementById('homeWaterHint').textContent=ml>=2000?'Meta de água batida hoje!':'Faltam '+(2000-ml)+' ml para bater sua meta.';
+  const medsToday=wellness.taken[today]||{};
+  const medsTotal=wellness.meds.length;
+  const medsChecked=wellness.meds.filter(m=>medsToday[m.id]).length;
+  document.getElementById('homeMedsValue').textContent=medsChecked+' de '+medsTotal+' tomados';
+  document.getElementById('homeMedsList').innerHTML=wellness.meds.length?wellness.meds.slice(0,3).map(m=>'<li>'+(medsToday[m.id]?'✅':'⚪')+' '+escapeHTML(m.name)+(m.time?' — '+escapeHTML(m.time):'')+'</li>').join(''):'<li>Nenhum remédio cadastrado ainda.</li>';
+  const now=new Date(), ym=today.slice(0,7); const monthCount=Object.keys(wellness.gym).filter(d=>d.startsWith(ym)&&wellness.gym[d]).length;
+  document.getElementById('homeGymValue').textContent=monthCount+' treino(s) neste mês';
+  const monday=startOfWeek(new Date()); let weekHtml=''; const weekNames=['Seg','Ter','Qua','Qui','Sex','Sáb','Dom'];
+  for(let i=0;i<7;i++){ const dt=new Date(monday); dt.setDate(monday.getDate()+i); const key=iso(dt); const done=!!wellness.gym[key]; weekHtml += '<div class="weekdot '+(done?'done':'')+'"><i>'+(done?'✓':'')+'</i><span>'+weekNames[i]+'</span></div>'; }
+  document.getElementById('homeWeekDots').innerHTML=weekHtml;
+  const phrases=['Disciplina hoje, resultados incríveis amanhã.','Cada escolha conta — e você está indo muito bem.','Constância vale mais que perfeição.','Você não precisa fazer tudo; só continuar.','Seu futuro eu vai agradecer por cada passo de hoje.'];
+  if(forceQuote || !renderHome._quote){renderHome._quote=phrases[Math.floor(Math.random()*phrases.length)]}
+  document.getElementById('homeQuote').textContent=renderHome._quote;
+}
+function showSection(id){for(const x of ['home','menu','calendar','shopping','food','water','meds','gymtrack']){document.getElementById('section'+x).classList.toggle('hidden',x!==id);document.getElementById('nav'+x).classList.toggle('active',x===id)}if(id==='home')renderHome();if(id==='calendar'){renderCalendar();renderDate()}if(id==='shopping')renderShopping();if(id==='food')renderExtras();if(id==='water')renderWater();if(id==='meds')renderMeds();if(id==='gymtrack')renderGymTrack()}
+const _saveDate=saveDate; saveDate=function(){_saveDate(); renderHome()}
+const _deleteDate=deleteDate; deleteDate=function(){_deleteDate(); renderHome()}
+const _addWater=addWater; addWater=function(v){_addWater(v); renderHome()}
+const _createMed=createMed; createMed=function(){_createMed(); renderHome()}
+const _toggleMed=toggleMed; toggleMed=function(id,taken){_toggleMed(id,taken); renderHome()}
+const _removeMed=removeMed; removeMed=function(id){_removeMed(id); renderHome()}
+const _toggleGym=toggleGym; toggleGym=function(date){_toggleGym(date); renderHome()}
+const _commitFood=commitFood; commitFood=function(food){_commitFood(food); renderHome()}
+const _deleteFood=deleteFood; deleteFood=function(i){_deleteFood(i); renderHome()}
+const _importData=importData; importData=function(input){_importData(input); setTimeout(()=>renderHome(),100)}
+showSection('home');
+
+initWellnessDates();let ym=document.getElementById('gymmonth').value;if(!ym)return;let [y,m]=ym.split('-').map(Number),n=new Date(y,m,0).getDate(),total=0,html='';for(let d=1;d<=n;d++){let date=ym+'-'+pad(d),v=!!wellness.gym[date];if(v)total++;html+=`<button class="${v?'visited':''}" onclick="toggleGym('${date}')" aria-label="Dia ${d}: ${v?'treino registrado':'sem treino'}" title="${v?'Foi à academia':'Marcar academia'}">${d}${v?' ✓':''}</button>`}document.getElementById('gymdates').innerHTML=html;document.getElementById('gymtotal').textContent=total;document.getElementById('gymdetails').textContent=`${total} visita(s) registradas em ${n} dias. Toque nos números para marcar ou desmarcar.`}
 function exportData(){let backup={version:3,created:new Date().toISOString(),weekly:state,diary,checks,wellness};let blob=new Blob([JSON.stringify(backup,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='backup-meu-cardapio-'+iso(new Date())+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}
 function importData(input){let file=input.files&&input.files[0];if(!file)return;file.text().then(txt=>{let b=JSON.parse(txt);if(b.version!==3||!b.wellness||!b.diary||!Array.isArray(b.weekly))throw new Error('Arquivo inválido');if(!confirm('Restaurar este backup e substituir os registros deste aparelho?'))return;state=b.weekly;diary=b.diary;checks=b.checks||{};wellness={foods:{},water:{},meds:[],taken:{},gym:{},...b.wellness};save();localStorage.setItem('cardapio-diary-v2',JSON.stringify(diary));localStorage.setItem('cardapio-checks-v2',JSON.stringify(checks));saveWellness();render();renderGymTrack();alert('Backup restaurado com sucesso!')}).catch(e=>alert('Não foi possível importar o backup: '+e.message));input.value=''}
+
+function startOfWeek(d){const x=new Date(d);const day=(x.getDay()+6)%7;x.setDate(x.getDate()-day);x.setHours(12,0,0,0);return x}
+function renderHome(forceQuote=false){
+  const today=iso(new Date());
+  const goal=1800;
+  const todayData=diary[today]?diaryTotal(diary[today],today):diaryTotal(copyDefault(today),today);
+  document.getElementById('homeKcal').textContent=Math.round(todayData.k).toLocaleString('pt-BR');
+  document.getElementById('homeGoal').textContent='de '+goal.toLocaleString('pt-BR');
+  document.getElementById('homeP').textContent=num(todayData.p)+' g';
+  document.getElementById('homeC').textContent=num(todayData.c)+' g';
+  document.getElementById('homeG').textContent=num(todayData.g)+' g';
+  const deg=Math.max(0,Math.min(360,(todayData.k/goal)*360));
+  document.getElementById('homeRing').style.setProperty('--deg',deg+'deg');
+  const ml=wellness.water[today]||0;
+  document.getElementById('homeWaterValue').textContent=ml.toLocaleString('pt-BR')+' / 2.000 ml';
+  document.getElementById('homeWaterBar').style.width=Math.min(100,ml/2000*100)+'%';
+  document.getElementById('homeWaterHint').textContent=ml>=2000?'Meta de água batida hoje!':'Faltam '+(2000-ml)+' ml para bater sua meta.';
+  const medsToday=wellness.taken[today]||{};
+  const medsTotal=wellness.meds.length;
+  const medsChecked=wellness.meds.filter(m=>medsToday[m.id]).length;
+  document.getElementById('homeMedsValue').textContent=medsChecked+' de '+medsTotal+' tomados';
+  document.getElementById('homeMedsList').innerHTML=wellness.meds.length?wellness.meds.slice(0,3).map(m=>'<li>'+(medsToday[m.id]?'✅':'⚪')+' '+escapeHTML(m.name)+(m.time?' — '+escapeHTML(m.time):'')+'</li>').join(''):'<li>Nenhum remédio cadastrado ainda.</li>';
+  const now=new Date(), ym=today.slice(0,7); const monthCount=Object.keys(wellness.gym).filter(d=>d.startsWith(ym)&&wellness.gym[d]).length;
+  document.getElementById('homeGymValue').textContent=monthCount+' treino(s) neste mês';
+  const monday=startOfWeek(new Date()); let weekHtml=''; const weekNames=['Seg','Ter','Qua','Qui','Sex','Sáb','Dom'];
+  for(let i=0;i<7;i++){ const dt=new Date(monday); dt.setDate(monday.getDate()+i); const key=iso(dt); const done=!!wellness.gym[key]; weekHtml += '<div class="weekdot '+(done?'done':'')+'"><i>'+(done?'✓':'')+'</i><span>'+weekNames[i]+'</span></div>'; }
+  document.getElementById('homeWeekDots').innerHTML=weekHtml;
+  const phrases=['Disciplina hoje, resultados incríveis amanhã.','Cada escolha conta — e você está indo muito bem.','Constância vale mais que perfeição.','Você não precisa fazer tudo; só continuar.','Seu futuro eu vai agradecer por cada passo de hoje.'];
+  if(forceQuote || !renderHome._quote){renderHome._quote=phrases[Math.floor(Math.random()*phrases.length)]}
+  document.getElementById('homeQuote').textContent=renderHome._quote;
+}
+function showSection(id){for(const x of ['home','menu','calendar','shopping','food','water','meds','gymtrack']){document.getElementById('section'+x).classList.toggle('hidden',x!==id);document.getElementById('nav'+x).classList.toggle('active',x===id)}if(id==='home')renderHome();if(id==='calendar'){renderCalendar();renderDate()}if(id==='shopping')renderShopping();if(id==='food')renderExtras();if(id==='water')renderWater();if(id==='meds')renderMeds();if(id==='gymtrack')renderGymTrack()}
+const _saveDate=saveDate; saveDate=function(){_saveDate(); renderHome()}
+const _deleteDate=deleteDate; deleteDate=function(){_deleteDate(); renderHome()}
+const _addWater=addWater; addWater=function(v){_addWater(v); renderHome()}
+const _createMed=createMed; createMed=function(){_createMed(); renderHome()}
+const _toggleMed=toggleMed; toggleMed=function(id,taken){_toggleMed(id,taken); renderHome()}
+const _removeMed=removeMed; removeMed=function(id){_removeMed(id); renderHome()}
+const _toggleGym=toggleGym; toggleGym=function(date){_toggleGym(date); renderHome()}
+const _commitFood=commitFood; commitFood=function(food){_commitFood(food); renderHome()}
+const _deleteFood=deleteFood; deleteFood=function(i){_deleteFood(i); renderHome()}
+const _importData=importData; importData=function(input){_importData(input); setTimeout(()=>renderHome(),100)}
+showSection('home');
+
 initWellnessDates();
 </script><script>if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost")) {window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));}</script></body></html>
