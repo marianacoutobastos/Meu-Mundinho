@@ -1,7 +1,1 @@
-Meu Mundinho V24 - pacote completo
-
-Extraia e envie TODOS os arquivos para a raiz do repositorio GitHub Pages Meu-Mundinho.
-Arquivos: index.html, manifest.webmanifest, sw.js, icon-192.png e icon-512.png.
-Antes de atualizar, confirme o backup no Google Drive. Nao apague dados do navegador.
-
-Esta versao inclui quantidades editaveis e preserva as demais funcoes da V23.
+Meu Mundinho V36 — trocas de ingredientes somente no almoço e jantar; gramas editáveis em outras refeições. As porções sugeridas buscam calorias semelhantes, com estimativas nutricionais, não são prescrição. Faça backup antes de atualizar o GitHub.
