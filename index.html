@@ -442,13 +442,13 @@ const ingredientDB={
  'Frango cozido':{group:'proteina',k:165,p:31,c:0,g:3.6},'Patinho cozido':{group:'proteina',k:220,p:27,c:0,g:11},'Atum em água':{group:'proteina',k:116,p:26,c:0,g:1},'Lombo cozido':{group:'proteina',k:195,p:29,c:0,g:8},'Ovo cozido':{group:'proteina',k:146,p:13,c:.6,g:10},
  'Arroz cozido':{group:'carbo',k:128,p:2.5,c:28,g:.2},'Feijão cozido':{group:'carbo',k:76,p:4.8,c:13.6,g:.5},'Batata cozida':{group:'carbo',k:52,p:1.2,c:12,g:0},'Macarrão cozido':{group:'carbo',k:158,p:5.8,c:31,g:1},
  'Muçarela':{group:'laticinio',k:330,p:23,c:3,g:25},'Queijo branco':{group:'laticinio',k:260,p:17,c:3,g:20},'Requeijão':{group:'laticinio',k:250,p:8,c:5,g:22},
- 'Banana':{group:'fruta',k:90,p:1,c:23,g:.1},'Maçã':{group:'fruta',k:56,p:.3,c:15,g:0},'Mamão':{group:'fruta',k:43,p:.5,c:10,g:.1}
+ 'Aveia':{group:'cereal',k:390,p:17,c:66,g:7},'Chocolate ao leite':{group:'doce',k:535,p:7,c:59,g:30},'Banana':{group:'fruta',k:90,p:1,c:23,g:.1},'Maçã':{group:'fruta',k:56,p:.3,c:15,g:0},'Mamão':{group:'fruta',k:43,p:.5,c:10,g:.1}
 };
 function ing(name,g){return {name,g}}
 const mealParts={
  l:[ [ing('Frango cozido',85),ing('Arroz cozido',85),ing('Feijão cozido',70)], [ing('Patinho cozido',85),ing('Arroz cozido',85),ing('Feijão cozido',70)], [ing('Patinho cozido',85),ing('Arroz cozido',85),ing('Feijão cozido',70)], [ing('Lombo cozido',85),ing('Arroz cozido',85),ing('Feijão cozido',70)], [ing('Frango cozido',85),ing('Arroz cozido',100),ing('Feijão cozido',70)], [ing('Frango cozido',85),ing('Arroz cozido',85),ing('Feijão cozido',70)], [ing('Patinho cozido',85),ing('Arroz cozido',85),ing('Feijão cozido',70)] ],
  d:[ [ing('Rap10 / wrap',60),ing('Frango cozido',80),ing('Muçarela',30)], [ing('Goma de tapioca',60),ing('Patinho cozido',80),ing('Queijo branco',30)], [ing('Pão francês',50),ing('Frango cozido',70),ing('Requeijão',20),ing('Muçarela',20)], [ing('Pão de hambúrguer',60),ing('Patinho cozido',85),ing('Muçarela',20)], [ing('Rap10 / wrap',60),ing('Atum em água',80),ing('Muçarela',30),ing('Requeijão',20)], [ing('Ovo cozido',50),ing('Goma de tapioca',40),ing('Frango cozido',65),ing('Muçarela',20)], [ing('Pão integral',75),ing('Frango cozido',80),ing('Requeijão',30)] ],
- s:[ [ing('Pão integral',45),ing('Maçã',100)],[ing('Goma de tapioca',80),ing('Ovo cozido',50),ing('Muçarela',30),ing('Requeijão',20)],[ing('Frango cozido',50),ing('Ovo cozido',50),ing('Muçarela',20)],[ing('Banana',90),ing('Ovo cozido',50),ing('Aveia',25),ing('Chocolate ao leite',10)], [ing('Muçarela',40)] ],
+ s:[ [],[],[],[ing('Banana',80),ing('Ovo cozido',50),ing('Aveia',25),ing('Chocolate ao leite',10)], [] ],
  pre:[[ing('Banana',90)],[ing('Pão integral',25),ing('Requeijão',20)],[ing('Pão integral',25)],[ ]]
 };
 function partsFor(kind,index){return (mealParts[kind]||[])[index]||[]}
@@ -499,4 +499,42 @@ const auditStyles=document.createElement('style');auditStyles.textContent='.kcal
  changeDateChoice=function(kind,val){oldChangeDate(kind,val);if(kind==='b'||kind==='late')renderDate()};
  render();
 })();
+
+// V24 — gramas pré-preenchidas, editáveis logo abaixo da escolha.
+const gEditorCss=document.createElement('style');gEditorCss.textContent=`
+.qty-card{margin:9px 0 2px;padding:11px;border:1px solid #ebd8e1;border-radius:14px;background:#fff9fb;min-width:0;overflow-wrap:anywhere}
+.qty-heading{font-size:13px;font-weight:750;color:#82435f;margin-bottom:8px}
+.qty-grid{display:grid;grid-template-columns:minmax(0,1fr) 82px;gap:6px 9px;align-items:center}
+.qty-grid label{font-size:12px;min-width:0;overflow-wrap:anywhere}.qty-grid input{width:100%;min-width:0;box-sizing:border-box;text-align:center;padding:8px 3px;border:1px solid #dfc6d2;border-radius:10px;font-size:16px;background:white}
+.qty-actions{display:flex;justify-content:space-between;align-items:center;gap:6px;flex-wrap:wrap;margin-top:8px}
+.qty-actions button{border:0;background:#f4e3eb;color:#7b3657;padding:8px;border-radius:10px;font-weight:700;cursor:pointer}
+.qty-small{font-size:11px;color:#8d6c7a;line-height:1.5}
+@media(max-width:380px){.qty-grid{grid-template-columns:minmax(0,1fr) 70px}.qty-card{padding:9px}}
+`;document.head.appendChild(gEditorCss);
+function qtyBlock(x,kind,calendar=false){
+ const list=partsFor(kind,x[kind]);if(!list.length)return '';
+ const mods=mealMods(x,kind);const label={l:'Almoço',s:'Lanche',pre:'Pré-treino',d:'Jantar'}[kind];
+ return `<div class="qty-card" data-qty-kind="${kind}"><div class="qty-heading">⚖️ Quantidades de ${label.toLowerCase()} — ajuste se precisar</div><div class="qty-grid">${list.map((part,j)=>{const current=mods[j]||part;return `<label for="${calendar?'date':'week'}qty-${kind}-${j}">${current.name} <span class="qty-small">(padrão: ${part.g} g)</span></label><input id="${calendar?'date':'week'}qty-${kind}-${j}" type="number" inputmode="decimal" min="0" max="1000" step="1" value="${current.g}" onchange="${calendar?'changeDateQty':'changeWeekQty'}('${kind}',${j},this.value)" aria-label="Gramas de ${current.name}">`}).join('')}</div><div class="qty-actions"><span class="qty-small">A alteração recalcula calorias e macros estimados.</span><button type="button" onclick="${calendar?'resetDateQty':'resetWeekQty'}('${kind}')">Restaurar quantidades</button></div></div>`;
+}
+function changeWeekQty(kind,j,value){let x=state[day];x.mods??={};x.mods[kind]??={};const orig=partsFor(kind,x[kind])[j];const current=x.mods[kind][j]||orig;x.mods[kind][j]={name:current.name,g:Math.max(0,Math.min(1000,Number(value)||0))};save();render();}
+function resetWeekQty(kind){if(state[day].mods)delete state[day].mods[kind];save();render();}
+function changeDateQty(kind,j,value){temp.mods??={};temp.mods[kind]??={};const orig=partsFor(kind,temp[kind])[j];const current=temp.mods[kind][j]||orig;temp.mods[kind][j]={name:current.name,g:Math.max(0,Math.min(1000,Number(value)||0))};renderDate();}
+function resetDateQty(kind){if(temp.mods)delete temp.mods[kind];renderDate();}
+// Soma a diferença de gramas sobre os macros cadastrados da refeição;
+// evita recalcular o prato inteiro com outra referência nutricional.
+function adjustedChoice(x,kind){const src={l:lunches,s:snacks,pre:pres,d:dinners}[kind];return modifier(x,kind,0)}
+const previousTotalV24=total;
+total=function(i){const x=state[i];let t=previousTotalV24(i);for(const kind of ['l','s','pre','d']){const base={l:lunches,s:snacks,pre:pres,d:dinners}[kind][x[kind]];const adj=adjustedChoice(x,kind);for(const key of ['k','p','c','g'])t[key]+=adj[key]-base[key]}return t;};
+// Versão corrigida da soma do diário: café com leite só entra quando marcado.
+// Preserva a inclusão de produtos cadastrados e de substituições já existentes.
+diaryTotal=function(x,date){const entries=[morningCoffee(x),breakfastWithFruit(x),adjustedChoice(x,'l'),snackWithFruit(x),adjustedChoice(x,'pre'),adjustedChoice(x,'d'),complements[x.late??0],...(x.sweet?[item('Chocolate','15 g de chocolate',80,1,9,5)]:[])];const result=entries.reduce((a,v)=>({k:a.k+v.k,p:a.p+v.p,c:a.c+v.c,g:a.g+v.g}),{k:0,p:0,c:0,g:0});const originalSnack=snacks[x.s],modifiedSnack=adjustedChoice(x,'s');for(const key of ['k','p','c','g'])result[key]+=modifiedSnack[key]-originalSnack[key];const extras=extraTotal(date);for(const key of ['k','p','c','g'])result[key]+=extras[key];return result;};
+// Atualiza os editores junto das escolhas, sem deslocá-los ao fim do formulário.
+const renderWeekBeforeQty=render;
+render=function(){renderWeekBeforeQty();const container=document.getElementById('choiceMeals');for(const kind of ['l','s','pre','d']){const block=container.querySelector(`select[data-kind="${kind}"]`)?.closest('.meal');if(block)block.insertAdjacentHTML('beforeend',qtyBlock(state[day],kind,false))}const t=total(day);document.getElementById('kcal').textContent=Math.round(t.k).toLocaleString('pt-BR')+' kcal';for(const key of ['p','c','g'])document.getElementById(key).textContent=formatMacro(t[key])+' g';const audit=document.getElementById('weeklyKcalAudit');if(audit)audit.textContent=kcalAuditText(t);};
+const renderDateBeforeQty=renderDate;
+renderDate=function(){renderDateBeforeQty();const form=document.getElementById('dateform');form.querySelectorAll('.meal-editor').forEach(el=>el.remove());for(const kind of ['l','s','pre','d']){const selector=form.querySelector(`select[onchange*="'${kind}'"]`);const block=selector?.closest('.meal');if(block){block.insertAdjacentHTML('beforeend',qtyBlock(temp,kind,true));} }const t=diaryTotal(temp,activeDate);const sum=form.querySelector('.summary');if(sum){sum.querySelector('.kcal').textContent=Math.round(t.k).toLocaleString('pt-BR')+' kcal';const b=sum.querySelector('b');if(b)b.textContent=`P ${formatMacro(t.p)} g · C ${formatMacro(t.c)} g · G ${formatMacro(t.g)} g`;}const audit=document.getElementById('diaryKcalAudit');if(audit)audit.textContent=kcalAuditText(t);};
+const changeWeekOnSelectBeforeQty=render;
+// Não conservar as quantidades de outra receita quando a opção mudar.
+render=function(){changeWeekOnSelectBeforeQty();document.querySelectorAll('#choiceMeals select[data-kind]').forEach(sel=>{const old=sel.onchange;sel.onchange=()=>{if(['l','s','pre','d'].includes(sel.dataset.kind)&&state[day].mods)delete state[day].mods[sel.dataset.kind];old();};});};
+render();
 </script><script>if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost")) {window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));}</script></body></html>
