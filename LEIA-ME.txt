@@ -1,1 +1,1 @@
-Meu Mundinho V36 — trocas de ingredientes somente no almoço e jantar; gramas editáveis em outras refeições. As porções sugeridas buscam calorias semelhantes, com estimativas nutricionais, não são prescrição. Faça backup antes de atualizar o GitHub.
+Meu Mundinho V29: quantidades em todas as refeições, campos de frutas padronizados e botões menores. Atualize os arquivos do GitHub Pages. Faça backup antes.
