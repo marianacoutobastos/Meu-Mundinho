@@ -1,1 +1,11 @@
-Meu Mundinho V29: quantidades em todas as refeições, campos de frutas padronizados e botões menores. Atualize os arquivos do GitHub Pages. Faça backup antes.
+Meu Mundinho - Cloudflare Sync, teste inicial
+
+Substitua os arquivos do site pelos arquivos deste ZIP no GitHub, preservando a pasta functions/api e seus bindings Cloudflare.
+
+Abra o site e use Conectar para fazer o primeiro envio ou recebimento. O aplicativo NAO envia dados automaticamente na primeira conexao.
+
+Ao receber da nuvem, um backup local JSON e baixado automaticamente.
+
+Sincronizacao nao faz fusao de alteracoes em dois aparelhos; conflitos exigem decisao explicita.
+
+Mantenha copia de seguranca ate concluir testes em iPhone e computador.

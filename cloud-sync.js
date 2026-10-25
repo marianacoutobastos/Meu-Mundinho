@@ -3,7 +3,7 @@
 (() => {
 'use strict';
 const API='/api/sync';
-const KEYS=['cardapio-v1','cardapio-diary-v2','cardapio-checks-v2','meu-cardapio-wellness-v3','mundinho-v26-favorites','mundinho-v26-pantry','meu-mundinho-ceias-v23'];
+const KEYS=['cardapio-v1','cardapio-diary-v2','cardapio-checks-v2','meu-cardapio-wellness-v3','mundinho-v26-favorites','mundinho-v26-pantry','meu-mundinho-ceias-v23','meu-mundinho-shopping-custom-v1'];
 const META='mm-cloud-sync-metadata-v1';
 let version=null, baseline=null, busy=false, enabled=false, paused=false, timer=null;
 const el=(id)=>document.getElementById(id);
