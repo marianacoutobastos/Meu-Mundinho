@@ -278,6 +278,43 @@ body{min-width:320px}
   .gymdates-pretty button .gym-daynum{font-size:11px!important}
 }
 
+
+/* V7 HOTFIX — manter "Meu Mundinho" na Academia e colocar o cabeçalho Academia em cartão branco */
+body:has(#sectiongymtrack:not(.hidden)) .hero{display:flex!important;justify-content:center!important;align-items:flex-start!important;position:relative!important;margin:4px 0 14px!important;padding-top:2px!important}
+body:has(#sectiongymtrack:not(.hidden)) .hero > div:first-child{width:100%!important;text-align:center!important}
+body:has(#sectiongymtrack:not(.hidden)) .hero h1{text-align:center!important;font-size:clamp(34px,9vw,56px)!important;margin:0 auto!important;line-height:1.05!important}
+body:has(#sectiongymtrack:not(.hidden)) .hero .avatar{position:absolute!important;right:0!important;top:0!important;flex:0 0 auto!important}
+body:has(#sectiongymtrack:not(.hidden)) .hero .versionline,
+body:has(#sectiongymtrack:not(.hidden)) .hero .muted{display:none!important}
+#sectiongymtrack .gym-header{display:flex!important;align-items:center!important;gap:14px!important;background:#fffafb!important;border:1px solid #f1d8e4!important;border-radius:26px!important;padding:16px 16px!important;box-shadow:0 8px 24px rgba(173,57,108,.08)!important;margin:0 0 14px!important;min-width:0!important}
+#sectiongymtrack .gym-header>div{min-width:0!important;flex:1 1 auto!important}
+#sectiongymtrack .gym-heading-icon{width:58px!important;height:58px!important;flex:0 0 58px!important;border-radius:18px!important;background:#ffe9f2!important}
+#sectiongymtrack .gym-heading-icon img{width:46px!important;height:46px!important;object-fit:contain!important}
+#sectiongymtrack .gym-header h2{font-size:clamp(24px,6.8vw,34px)!important;line-height:1.1!important;margin:0 0 4px!important;color:#7d0d44!important}
+#sectiongymtrack .gym-header .muted{font-size:14px!important;line-height:1.38!important;color:#9d768b!important;margin:0!important}
+/* campos do iPhone mais centralizados e sem estourar */
+.wrap input[type=date],.wrap input[type=time],.wrap input[type=month]{box-sizing:border-box!important;width:100%!important;max-width:100%!important;min-width:0!important;font-size:18px!important;text-align:center!important;text-align-last:center!important;padding:12px 14px!important;overflow:hidden!important}
+#sectionmeds label,#sectionfood label,#sectioncalendar label{display:block!important;width:100%!important;max-width:100%!important;min-width:0!important}
+#sectionmeds input[type=date],#sectionmeds input[type=time],#sectionfood input[type=date],#sectionfood input[type=time],#sectioncalendar input[type=date],#sectioncalendar input[type=month]{display:block!important;width:100%!important;max-width:100%!important;min-width:0!important;margin-top:8px!important}
+#sectionmeds input[type=time]{font-size:16px!important;padding-left:12px!important;padding-right:12px!important}
+#sectionmeds .panel,#sectionfood .panel,#sectioncalendar .panel{overflow:hidden!important}
+@media (max-width:430px){
+  body:has(#sectiongymtrack:not(.hidden)) .hero{margin:2px 0 12px!important;padding-top:2px!important}
+  body:has(#sectiongymtrack:not(.hidden)) .hero h1{font-size:clamp(30px,10vw,42px)!important}
+  body:has(#sectiongymtrack:not(.hidden)) .hero .avatar{width:48px!important;height:48px!important;right:2px!important}
+  #sectiongymtrack .gym-header{padding:14px 14px!important;border-radius:22px!important;gap:12px!important}
+  #sectiongymtrack .gym-heading-icon{width:54px!important;height:54px!important;flex:0 0 54px!important}
+  #sectiongymtrack .gym-heading-icon img{width:42px!important;height:42px!important}
+  #sectiongymtrack .gym-header h2{font-size:26px!important}
+  #sectiongymtrack .gym-header .muted{font-size:13px!important}
+  .wrap input[type=date],.wrap input[type=time],.wrap input[type=month]{font-size:17px!important;min-height:50px!important;padding:11px 12px!important}
+}
+@media (max-width:360px){
+  #sectiongymtrack .gym-header h2{font-size:23px!important}
+  #sectiongymtrack .gym-header .muted{font-size:12px!important}
+  .wrap input[type=date],.wrap input[type=time],.wrap input[type=month]{font-size:16px!important}
+}
+
 </style><link rel="manifest" href="./manifest.webmanifest"><link rel="apple-touch-icon" href="./icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="theme-color" content="#7b4667"></head><body><div class="wrap"><div class="hero"><h1>Meu Mundinho <span aria-label="coração">❤️</span></h1></div><div class="panel" id="toprefpanel"><div class="ref"><div><span class="muted">Meta inicial de calorias</span><b>1.600–1.650</b><small>kcal/dia</small></div><div><span class="muted">Proteína de referência</span><b>100–130 g</b><small>por dia</small></div></div><p class="tiny">Referências provisórias, não prescrição individual. Confirme seu peso e ajuste com profissional de saúde conforme necessário.</p></div><div class="navtools"><button id="navhome" class="active" onclick="showSection('home')"><span class="navicon">🏠</span><span class="navlabel">Início</span></button><button id="navmenu" onclick="showSection('menu')"><span class="navicon">🍽️</span><span class="navlabel">Alimentação</span></button><button id="navcalendar" onclick="showSection('calendar')"><span class="navicon">📅</span><span class="navlabel">Calendário</span></button><button id="navshopping" onclick="showSection('shopping')"><span class="navicon">🛒</span><span class="navlabel">Compras</span></button><button id="navfood" onclick="showSection('food')"><span class="navicon">🍎</span><span class="navlabel">Alimentos</span></button><button id="navwater" onclick="showSection('water')"><span class="navicon"><img src="./water-bottle.png" alt=""></span><span class="navlabel">Água</span></button><button id="navmeds" onclick="showSection('meds')"><span class="navicon"><img src="./pills-pink.png" alt=""></span><span class="navlabel">Remédios</span></button><button id="navgymtrack" onclick="showSection('gymtrack')"><span class="navicon"><img src="./dumbbell-pink.png" alt=""></span><span class="navlabel">Academia</span></button></div><div id="sectionhome">
   <div class="home-layout">
     <div class="home-maincard panel summary-redesign">
@@ -1211,7 +1248,7 @@ body{min-width:320px}
  .wrap { padding-bottom:calc(92px + env(safe-area-inset-bottom, 0px)) !important; }
 }
 </style>
-<script>if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost")) {window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js?v=5").catch(()=>{}));}</script><script src="./cloud-sync.js?v=5" defer></script><style>
+<script>if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost")) {window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js?v=6").catch(()=>{}));}</script><script src="./cloud-sync.js?v=6" defer></script><style>
 /* V5 — layout final: título central e nenhum vazio artificial entre cards e barra */
 .hero{width:100%!important;display:flex!important;align-items:center!important;justify-content:center!important;text-align:center!important;margin:0 0 12px!important;padding:8px 0 2px!important;gap:0!important}
 .hero h1{margin:0 auto!important;width:100%!important;max-width:100%!important;display:block!important;text-align:center!important;font-size:clamp(25px,7.4vw,38px)!important;line-height:1.15!important;letter-spacing:-.04em!important;white-space:nowrap!important}
@@ -1223,4 +1260,36 @@ body{min-width:320px}
 /* hide only static footer notices, not in-card information */
 body > .muted, .wrap > p.muted{display:none!important}
 @media(max-width:430px){.hero h1{font-size:clamp(22px,7.1vw,31px)!important}.wrap{padding-bottom:calc(88px + env(safe-area-inset-bottom,0px))!important}}
+
+/* V6 — ajustes iPhone: separacao dos titulos, campos fluidos e datas legiveis */
+html,body{max-width:100%!important;overflow-x:clip!important}
+.wrap,.panel,#sectionmeds,#sectionfood,#sectiongymtrack,#sectionmenu{min-width:0!important;max-width:100%!important}
+/* Na academia, o titulo grande da pagina substitui o cabecalho global. */
+body:has(#sectiongymtrack:not(.hidden)) .hero{display:none!important}
+#sectiongymtrack .gym-header{margin:18px 0 20px!important;padding:2px 4px!important;align-items:center!important;gap:14px!important;min-width:0!important}
+#sectiongymtrack .gym-header>div{min-width:0!important;flex:1!important}
+#sectiongymtrack .gym-header h2{font-size:clamp(26px,7vw,34px)!important;line-height:1.16!important;white-space:normal!important;margin:0 0 5px!important}
+#sectiongymtrack .gym-header .muted{font-size:13px!important;line-height:1.4!important;white-space:normal!important;margin:0!important}
+/* Em qualquer aba, inputs HTML5 nunca ultrapassam seus cartoes. */
+.wrap input:not([type=checkbox]),.wrap select,.wrap textarea{box-sizing:border-box!important;min-width:0!important;max-width:100%!important;width:100%!important;font-size:16px!important}
+.wrap input[type=date],.wrap input[type=time],.wrap input[type=month]{display:block!important;position:relative;min-width:0!important;max-width:100%!important;width:100%!important;min-height:48px!important;text-align:center!important;text-align-last:center!important;padding:11px 12px!important;border-radius:15px!important;line-height:1.35!important;-webkit-appearance:none!important;appearance:none!important}
+.wrap input[type=date]::-webkit-date-and-time-value,.wrap input[type=time]::-webkit-date-and-time-value,.wrap input[type=month]::-webkit-date-and-time-value{text-align:center!important;min-width:0!important;width:100%!important}
+.wrap input[type=date]::-webkit-datetime-edit,.wrap input[type=time]::-webkit-datetime-edit,.wrap input[type=month]::-webkit-datetime-edit{text-align:center!important;display:block!important;width:100%!important;min-width:0!important}
+.wrap input[type=date]::-webkit-inner-spin-button,.wrap input[type=time]::-webkit-inner-spin-button{display:none}
+#sectionmeds label,#sectionmeds .panel,#sectionfood label,#sectionfood .panel{max-width:100%!important;min-width:0!important}
+#sectionmeds .panel,#sectionfood .panel{overflow:hidden!important}
+/* Cards de registro com data ao lado do rotulo: quebrar a linha de modo fluido. */
+#feedPlanner label,#feedHistory label,#feedCatalog label,#sectionfood label,#sectionmeds label{min-width:0!important}
+@media(max-width:640px){
+ .wrap{padding-left:10px!important;padding-right:10px!important}
+ #sectiongymtrack .gym-header{margin-top:12px!important;margin-bottom:18px!important}
+ #sectiongymtrack .gym-heading-icon{width:60px!important;height:60px!important;flex:0 0 60px!important}
+ #sectiongymtrack .gym-heading-icon img{width:49px!important;height:49px!important;object-fit:contain!important}
+ #sectiongymtrack .gym-header h2{font-size:29px!important}
+ #sectionmeds .panel,#sectionfood .panel{padding-left:14px!important;padding-right:14px!important}
+ #sectionmeds input[type=date],#sectionmeds input[type=time],#sectionfood input[type=date],#sectionfood input[type=time]{font-size:16px!important}
+ .feed-switch{min-width:0!important;max-width:100%!important}
+}
+@media(max-width:360px){#sectiongymtrack .gym-header h2{font-size:26px!important}}
+
 </style></body></html>
