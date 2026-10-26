@@ -1,4 +1,4 @@
-const CACHE='meu-mundinho-v9-academia-aprovada';
+const CACHE='meu-mundinho-v10-final-20261026';
 const ASSETS=['./','./index.html','./manifest.webmanifest','./icon-192.png','./icon-512.png','./water-bottle.png','./pills-pink.png','./dumbbell-pink.png','./dumbbell-gray.png','./cloud.svg','./cloud-sync.js'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('meu-mundinho-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
