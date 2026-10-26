@@ -364,6 +364,13 @@ body:has(#sectiongymtrack:not(.hidden)) .hero .muted{display:none!important}
 #sectiongymtrack .gym-month-shell>button,#sectiongymtrack .gym-month-shell>.gymmonthpretty{grid-row:1!important;max-height:44px!important;height:44px!important;min-height:0!important;margin:0!important}
 #sectiongymtrack .gym-month-shell #gymmonth{display:none!important;visibility:hidden!important;position:absolute!important;width:0!important;height:0!important;min-width:0!important;min-height:0!important;padding:0!important;margin:0!important;border:0!important}
 @media(max-width:390px){#sectiongymtrack .gym-header{padding:15px 14px!important}#sectiongymtrack .gym-month-shell{grid-template-columns:36px minmax(0,1fr) 36px!important;gap:6px!important}}
+
+/* V11 HOTFIX — manter o título "Meu Mundinho" da Academia com o mesmo tamanho das demais abas */
+body:has(#sectiongymtrack:not(.hidden)) .hero{display:flex!important;align-items:center!important;justify-content:center!important;text-align:center!important;margin:0 0 12px!important;padding:8px 0 2px!important;gap:0!important;visibility:visible!important}
+body:has(#sectiongymtrack:not(.hidden)) .hero h1{margin:0 auto!important;width:100%!important;max-width:100%!important;display:block!important;text-align:center!important;font-size:clamp(25px,7.4vw,38px)!important;line-height:1.15!important;letter-spacing:-.04em!important;white-space:nowrap!important;color:#790739!important}
+body:has(#sectiongymtrack:not(.hidden)) .hero p,
+body:has(#sectiongymtrack:not(.hidden)) .hero .avatar{display:none!important}
+@media(max-width:430px){body:has(#sectiongymtrack:not(.hidden)) .hero h1{font-size:clamp(22px,7.1vw,31px)!important}}
 </style><link rel="manifest" href="./manifest.webmanifest"><link rel="apple-touch-icon" href="./icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="theme-color" content="#7b4667"></head><body><div class="wrap"><div class="hero"><h1>Meu Mundinho <span aria-label="coração">❤️</span></h1></div><div class="navtools"><button id="navhome" class="active" onclick="showSection('home')"><span class="navicon">🏠</span><span class="navlabel">Início</span></button><button id="navmenu" onclick="showSection('menu')"><span class="navicon">🍽️</span><span class="navlabel">Alimentação</span></button><button id="navcalendar" onclick="showSection('calendar')"><span class="navicon">📅</span><span class="navlabel">Calendário</span></button><button id="navshopping" onclick="showSection('shopping')"><span class="navicon">🛒</span><span class="navlabel">Compras</span></button><button id="navfood" onclick="showSection('food')"><span class="navicon">🍎</span><span class="navlabel">Alimentos</span></button><button id="navwater" onclick="showSection('water')"><span class="navicon"><img src="./water-bottle.png" alt=""></span><span class="navlabel">Água</span></button><button id="navmeds" onclick="showSection('meds')"><span class="navicon"><img src="./pills-pink.png" alt=""></span><span class="navlabel">Remédios</span></button><button id="navgymtrack" onclick="showSection('gymtrack')"><span class="navicon"><img src="./dumbbell-pink.png" alt=""></span><span class="navlabel">Academia</span></button></div><div id="sectionhome">
   <div class="home-layout">
     <div class="home-maincard panel summary-redesign">
@@ -818,6 +825,13 @@ body{min-width:320px}
   .gymdates-pretty button .gym-daynum{font-size:11px!important}
 }
 
+
+/* V11 HOTFIX — manter o título "Meu Mundinho" da Academia com o mesmo tamanho das demais abas */
+body:has(#sectiongymtrack:not(.hidden)) .hero{display:flex!important;align-items:center!important;justify-content:center!important;text-align:center!important;margin:0 0 12px!important;padding:8px 0 2px!important;gap:0!important;visibility:visible!important}
+body:has(#sectiongymtrack:not(.hidden)) .hero h1{margin:0 auto!important;width:100%!important;max-width:100%!important;display:block!important;text-align:center!important;font-size:clamp(25px,7.4vw,38px)!important;line-height:1.15!important;letter-spacing:-.04em!important;white-space:nowrap!important;color:#790739!important}
+body:has(#sectiongymtrack:not(.hidden)) .hero p,
+body:has(#sectiongymtrack:not(.hidden)) .hero .avatar{display:none!important}
+@media(max-width:430px){body:has(#sectiongymtrack:not(.hidden)) .hero h1{font-size:clamp(22px,7.1vw,31px)!important}}
 </style>
 <script>
 /* V25 mantém cardápio, dados locais e sincronização do Drive já existentes. */
@@ -947,6 +961,13 @@ body{min-width:320px}
   .gymdates-pretty button .gym-daynum{font-size:11px!important}
 }
 
+
+/* V11 HOTFIX — manter o título "Meu Mundinho" da Academia com o mesmo tamanho das demais abas */
+body:has(#sectiongymtrack:not(.hidden)) .hero{display:flex!important;align-items:center!important;justify-content:center!important;text-align:center!important;margin:0 0 12px!important;padding:8px 0 2px!important;gap:0!important;visibility:visible!important}
+body:has(#sectiongymtrack:not(.hidden)) .hero h1{margin:0 auto!important;width:100%!important;max-width:100%!important;display:block!important;text-align:center!important;font-size:clamp(25px,7.4vw,38px)!important;line-height:1.15!important;letter-spacing:-.04em!important;white-space:nowrap!important;color:#790739!important}
+body:has(#sectiongymtrack:not(.hidden)) .hero p,
+body:has(#sectiongymtrack:not(.hidden)) .hero .avatar{display:none!important}
+@media(max-width:430px){body:has(#sectiongymtrack:not(.hidden)) .hero h1{font-size:clamp(22px,7.1vw,31px)!important}}
 </style>
 <script>
 /* Meu Mundinho V26: melhorias opcionais, sem alterar a home */
@@ -1297,6 +1318,13 @@ body{min-width:320px}
 @media (max-width:640px) {
  .wrap { padding-bottom:calc(92px + env(safe-area-inset-bottom, 0px)) !important; }
 }
+
+/* V11 HOTFIX — manter o título "Meu Mundinho" da Academia com o mesmo tamanho das demais abas */
+body:has(#sectiongymtrack:not(.hidden)) .hero{display:flex!important;align-items:center!important;justify-content:center!important;text-align:center!important;margin:0 0 12px!important;padding:8px 0 2px!important;gap:0!important;visibility:visible!important}
+body:has(#sectiongymtrack:not(.hidden)) .hero h1{margin:0 auto!important;width:100%!important;max-width:100%!important;display:block!important;text-align:center!important;font-size:clamp(25px,7.4vw,38px)!important;line-height:1.15!important;letter-spacing:-.04em!important;white-space:nowrap!important;color:#790739!important}
+body:has(#sectiongymtrack:not(.hidden)) .hero p,
+body:has(#sectiongymtrack:not(.hidden)) .hero .avatar{display:none!important}
+@media(max-width:430px){body:has(#sectiongymtrack:not(.hidden)) .hero h1{font-size:clamp(22px,7.1vw,31px)!important}}
 </style>
 <script>if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost")) {window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js?v=10").catch(()=>{}));}</script><script src="./cloud-sync.js?v=6" defer></script><style>
 /* V5 — layout final: título central e nenhum vazio artificial entre cards e barra */
@@ -1342,6 +1370,13 @@ body:has(#sectiongymtrack:not(.hidden)) .hero{display:none!important}
 }
 @media(max-width:360px){#sectiongymtrack .gym-header h2{font-size:26px!important}}
 
+
+/* V11 HOTFIX — manter o título "Meu Mundinho" da Academia com o mesmo tamanho das demais abas */
+body:has(#sectiongymtrack:not(.hidden)) .hero{display:flex!important;align-items:center!important;justify-content:center!important;text-align:center!important;margin:0 0 12px!important;padding:8px 0 2px!important;gap:0!important;visibility:visible!important}
+body:has(#sectiongymtrack:not(.hidden)) .hero h1{margin:0 auto!important;width:100%!important;max-width:100%!important;display:block!important;text-align:center!important;font-size:clamp(25px,7.4vw,38px)!important;line-height:1.15!important;letter-spacing:-.04em!important;white-space:nowrap!important;color:#790739!important}
+body:has(#sectiongymtrack:not(.hidden)) .hero p,
+body:has(#sectiongymtrack:not(.hidden)) .hero .avatar{display:none!important}
+@media(max-width:430px){body:has(#sectiongymtrack:not(.hidden)) .hero h1{font-size:clamp(22px,7.1vw,31px)!important}}
 </style><style>
 /* V10 — final overrides after all legacy styles */
 #toprefpanel{display:none!important}
@@ -1369,4 +1404,11 @@ body:has(#sectiongymtrack:not(.hidden)) .hero{display:flex!important;visibility:
 .summary-redesign .home-macro-pill{padding:9px 7px!important}
 .summary-redesign .home-macro-pill b{font-size:clamp(18px,5.3vw,23px)!important}
 }
+
+/* V11 HOTFIX — manter o título "Meu Mundinho" da Academia com o mesmo tamanho das demais abas */
+body:has(#sectiongymtrack:not(.hidden)) .hero{display:flex!important;align-items:center!important;justify-content:center!important;text-align:center!important;margin:0 0 12px!important;padding:8px 0 2px!important;gap:0!important;visibility:visible!important}
+body:has(#sectiongymtrack:not(.hidden)) .hero h1{margin:0 auto!important;width:100%!important;max-width:100%!important;display:block!important;text-align:center!important;font-size:clamp(25px,7.4vw,38px)!important;line-height:1.15!important;letter-spacing:-.04em!important;white-space:nowrap!important;color:#790739!important}
+body:has(#sectiongymtrack:not(.hidden)) .hero p,
+body:has(#sectiongymtrack:not(.hidden)) .hero .avatar{display:none!important}
+@media(max-width:430px){body:has(#sectiongymtrack:not(.hidden)) .hero h1{font-size:clamp(22px,7.1vw,31px)!important}}
 </style></body></html>
